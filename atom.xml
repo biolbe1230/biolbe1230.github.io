@@ -3,14 +3,14 @@
   <title>Lyx&#39;s Site</title>
   
   
-  <link href="https://github.com/biolbe1230/biolbe1230.github.io/atom.xml" rel="self"/>
+  <link href="https://biolbe1230.github.io/atom.xml" rel="self"/>
   
-  <link href="https://github.com/biolbe1230/biolbe1230.github.io/"/>
+  <link href="https://biolbe1230.github.io/"/>
   <updated>2023-05-07T13:58:27.835Z</updated>
-  <id>https://github.com/biolbe1230/biolbe1230.github.io/</id>
+  <id>https://biolbe1230.github.io/</id>
   
   <author>
-    <name>Yuxuan Li</name>
+    <name>Lyx</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>新建博客文章名</title>
-    <link href="https://github.com/biolbe1230/biolbe1230.github.io/post/9e43dbe9.html"/>
-    <id>https://github.com/biolbe1230/biolbe1230.github.io/post/9e43dbe9.html</id>
+    <link href="https://biolbe1230.github.io/post/9e43dbe9.html"/>
+    <id>https://biolbe1230.github.io/post/9e43dbe9.html</id>
     <published>2023-05-07T13:57:47.000Z</published>
     <updated>2023-05-07T13:58:27.835Z</updated>
     
@@ -31,8 +31,8 @@
   
   <entry>
     <title>test-blog</title>
-    <link href="https://github.com/biolbe1230/biolbe1230.github.io/post/467ec823.html"/>
-    <id>https://github.com/biolbe1230/biolbe1230.github.io/post/467ec823.html</id>
+    <link href="https://biolbe1230.github.io/post/467ec823.html"/>
+    <id>https://biolbe1230.github.io/post/467ec823.html</id>
     <published>2023-05-06T15:11:35.000Z</published>
     <updated>2023-05-07T13:58:27.838Z</updated>
     
@@ -51,8 +51,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://github.com/biolbe1230/biolbe1230.github.io/post/4a17b156.html"/>
-    <id>https://github.com/biolbe1230/biolbe1230.github.io/post/4a17b156.html</id>
+    <link href="https://biolbe1230.github.io/post/4a17b156.html"/>
+    <id>https://biolbe1230.github.io/post/4a17b156.html</id>
     <published>2023-05-06T14:36:39.483Z</published>
     <updated>2023-05-07T13:58:27.833Z</updated>
     
