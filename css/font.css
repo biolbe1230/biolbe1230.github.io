@@ -2,4 +2,5 @@
     font-family: 'LXGW Bright';
     font-display: swap;
     src: url('../font/LXGWBright-Regular.ttf') format("truetype");
+    unicode-range: U+1f1e9-1f1f5;
   }
