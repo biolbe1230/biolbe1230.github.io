@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>cs50_AI_1</title>
+      <link href="/post/d5442248.html"/>
+      <url>/post/d5442248.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Algorithms-and-Data-Structures-to-Approach"><a href="#Algorithms-and-Data-Structures-to-Approach" class="headerlink" title="Algorithms and Data Structures to Approach"></a>Algorithms and Data Structures to Approach</h1><ol><li><p>Depth-First Search</p><ol><li>expands the deepest node int the frontier</li><li>use <strong>stack</strong> to save nodes , last-in first-out</li><li>completely explores the finite possibilities</li><li>not necessarily finds the best solution[^Maze]</li></ol></li><li><p>Breadth-Fist Search</p><ol><li>expands the shallowest node in the frontier</li><li>use <strong>queue</strong> to save nodes, first-in fist-out</li><li>spend more time in average</li><li>finds the optimal path[^Maze]</li></ol></li><li><p>Informed Search-Greedy Beast-First Search</p><ol><li>use problem-specific knowledge to fined solution</li><li>expands the node that is closest to the goal,estimated by a <strong>heuristic function</strong> (<em>it needs to be admissible, never overestimates the true cost and consistent,which means h(n)&lt;&#x3D;h(n+c steps)+c</em>)</li></ol></li><li><p>MiniMax Algorithm</p><ol><li>minimax: MAX picks action <em>a</em> in Action(<em>s</em>) that produces the highest value of Min-Value(Result(<em>s,a</em>)), which means after this action <em>a</em> on state <em>s</em> , Min Player is less likely to win.</li><li>But what is function Min-Value()? Basically, the idea is to <strong>recursively</strong> go through every possible actions,  calculate the Max-Value(<em>s,a</em>) and find the <em>a</em> that makes the value smallest.</li><li><strong>Optimize</strong>-simple: if the Max-Value function reached a node that has already provides a lower value of Min-Value(Result(<em>s,a</em>)) for its recursive parent node, it can simply skip the node’s sibling nodes. (<strong>Alpha-Beata Pruning</strong>)</li><li><strong>Optimize</strong>-deeper: Depth-Limited MIniMax, in this situation, when the end layer of recursion if not the end of the game, we need an evaluation function(<em>the important part of an AI</em>) to estimate the utility of the game from a given state.</li></ol></li></ol><p>[^Maze]:searching for the optimal solution for a maze</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>psychology_1</title>
       <link href="/post/dc651521.html"/>
       <url>/post/dc651521.html</url>
