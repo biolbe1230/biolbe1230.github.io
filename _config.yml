@@ -103,4 +103,4 @@ theme: butterfly
 deploy:
   type: git
   repository: https://github.com/biolbe041230/biolbe041230.github.io
-  branch: master
+  branch: 2024/10
