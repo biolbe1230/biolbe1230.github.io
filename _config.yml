@@ -102,5 +102,5 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: http://github.com/biolbe041230/biolbe041230.github.io
+  repository: http://github.com/biolbe1230/biolbe1230.github.io
   branch: 2024/10
