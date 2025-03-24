@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>http://www.blubird.best/</loc>
+         <loc>http://biolbe1230.github.io/</loc>
          <lastmod>2025-03-24</lastmod>
     </url>
     <url>
-         <loc>http://www.blubird.best/posts/norco1/</loc>
+         <loc>http://biolbe1230.github.io/%E7%94%B5%E5%AD%90%E8%8D%92%E5%8E%9F/Norco/</loc>
          <lastmod>2025-03-24</lastmod>
     </url>
     <url>
-         <loc>http://www.blubird.best/posts/norco2/</loc>
+         <loc>http://biolbe1230.github.io/%E7%94%B5%E5%AD%90%E8%8D%92%E5%8E%9F/Norco/norco1/</loc>
+         <lastmod>2025-03-24</lastmod>
+    </url>
+    <url>
+         <loc>http://biolbe1230.github.io/%E7%94%B5%E5%AD%90%E8%8D%92%E5%8E%9F/Norco/norco2/</loc>
          <lastmod>2025-03-24</lastmod>
     </url>
 </urlset>
