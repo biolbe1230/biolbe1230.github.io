@@ -42,3 +42,10 @@
 @import "custom/layout/hero";
 @import "custom/layout/iconsearch";
 @import "custom/layout/sponsorship";
+
+
+:root  > * {
+  --md-primary-fg-color:        #EE0F0F;
+  --md-primary-fg-color--light: #ECB7B7;
+  --md-primary-fg-color--dark:  #90030C;
+}

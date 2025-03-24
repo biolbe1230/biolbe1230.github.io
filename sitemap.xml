@@ -2,10 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>http://www.blubird.best/</loc>
-         <lastmod>2025-03-23</lastmod>
+         <lastmod>2025-03-24</lastmod>
     </url>
     <url>
          <loc>http://www.blubird.best/posts/norco1/</loc>
-         <lastmod>2025-03-23</lastmod>
+         <lastmod>2025-03-24</lastmod>
+    </url>
+    <url>
+         <loc>http://www.blubird.best/posts/norco2/</loc>
+         <lastmod>2025-03-24</lastmod>
     </url>
 </urlset>
