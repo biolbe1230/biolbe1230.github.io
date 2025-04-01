@@ -1098,7 +1098,7 @@
 <p>总体上，如下图所示，Agent维护一个Memory，最开始是空的，每次思考后，将反馈添加到Memory中，然后再将<code>`System_Prompt</code>和<code>Memory</code>拼一起进行思考。<img alt="Agent_ManimCE" src="../Agent%E6%A1%86%E6%9E%B6.assets/Agent_ManimCE.gif" /></p>
 <h3 id="_2">多智体</h3>
 <p><a href="https://huggingface.co/agents-course/notebooks/blob/main/unit2/smolagents/multiagent_notebook.ipynb">多智体</a>，其实很简单，一个智能体分配任务，其他的接受任务，各司其职。deepseek-R1利用下属模型完成搜索，最后能够画图。</p>
-<p><img src="Agent框架.assets\image-20250401140315676-1743487397093-8.png" alt="image-20250401140315676" style="zoom:50%;" /></p>
+<p><img alt="多智体分工" src="../Agent%E6%A1%86%E6%9E%B6.assets/image.png" /></p>
 <h3 id="_3">实战细节</h3>
 <p>如下定义web agent，其中<code>description</code>给上层提供了它的职能。</p>
 <pre><code class="language-python">web_agent = CodeAgent(
