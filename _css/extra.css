@@ -9,3 +9,35 @@ body,
 input {
     font-family: 'LXGW WenKai Screen', 'Lexend', 'Noto Sans SC', 'Source Code Pro', -apple-system, Helvetica, Arial, sans-serif;
 }
+
+:root,
+[data-md-color-scheme=default] {    /* 主色调 - 使用橙红色作为主色 */
+    --md-default-fg-color: rgba(52, 57, 72, 0.78);
+    --md-default-fg-color--light: rgba(52, 56, 72, 0.54);
+    --md-default-fg-color--lighter: rgba(57, 52, 72, 0.32);
+    --md-default-fg-color--lightest: rgba(52, 55, 72, 0.27);
+    --md-default-bg-color: #fffaf5;
+    --md-default-bg-color--light: hsla(0, 0%, 100%, .7);
+    --md-default-bg-color--lighter: hsla(0, 0%, 100%, .3);
+    --md-default-bg-color--lightest: hsla(0, 0%, 100%, .12);
+    --md-primary-fg-color: #a1200f;
+    --md-primary-bg-color: #fdecec;
+
+
+
+    --md-code-fg-color: #66806A;
+    --md-code-bg-color: #fff0ea;
+    --md-code-hl-color: #d7e1c3;
+    --md-code-hl-number-color: #d52a2a;
+    --md-code-hl-special-color: #db1457;
+    --md-code-hl-function-color: #a846b9;
+    --md-code-hl-constant-color: #6e59d9;
+    --md-code-hl-keyword-color: #3f6ec6;
+    --md-code-hl-string-color: #1c7d4d;
+    --md-code-hl-name-color: var(--md-code-fg-color);
+    --md-code-hl-operator-color: var(--md-default-fg-color--light);
+    --md-code-hl-punctuation-color: var(--md-default-fg-color--light);
+    --md-code-hl-comment-color: var(--md-default-fg-color--light);
+    --md-code-hl-generic-color: var(--md-default-fg-color--light);
+    --md-code-hl-variable-color: var(--md-default-fg-color--light);
+}
