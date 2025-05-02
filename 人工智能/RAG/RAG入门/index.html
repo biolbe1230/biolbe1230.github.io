@@ -1316,8 +1316,7 @@
 <p>通常，RAG包含Indexing和Retrieval and Generation两个组件，其中Indexing负责离线地给数据建立索引，Retrieval负责获取用户的查询然后进行搜索。</p>
 <h3 id="indexing">Indexing<a class="headerlink" href="#indexing" title="Permanent link">&para;</a></h3>
 <ol>
-<li>加载 ： 首先通过Document Loader加载数据，可以是csv或者pdf等等。langchain将文档抽象为<code>Document</code>对象，包含<code>page_content</code>：表示内容的字符串，以及<code>metadata</code>：包含任意元数据的dict。简单样例如下：</li>
-</ol>
+<li>加载 ： 首先通过Document Loader加载数据，可以是csv或者pdf等等。langchain将文档抽象为<code>Document</code>对象，包含<code>page_content</code>：表示内容的字符串，以及<code>metadata</code>：包含任意元数据的dict。简单样例如下：
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">langchain_core.documents</span><span class="w"> </span><span class="kn">import</span> <span class="n">Document</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">documents</span> <span class="o">=</span> <span class="p">[</span>
@@ -1330,11 +1329,9 @@
 </span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        <span class="n">metadata</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;mammal-pets-doc&quot;</span><span class="p">},</span>
 </span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="p">),</span>
 </span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="p">]</span>
-</span></code></pre></div>
-<ol>
+</span></code></pre></div></li>
 <li>拆分 ： 文本拆分器将大型 Document 拆分为较小的块(<code>chunk</code>)。这对于索引数据以及将其传递到模型中都很有用，因为大型块更难搜索，并且不适合模型的有限上下文窗口。比如一个pdf中，可能一页是一个Document，但是一个块只有1k个token，并且每个块之间会有一定
-的overlap，防止重要的信息只能被包含在一段上下文内。</li>
-</ol>
+的overlap，防止重要的信息只能被包含在一段上下文内。
 <div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">langchain_text_splitters</span><span class="w"> </span><span class="kn">import</span> <span class="n">RecursiveCharacterTextSplitter</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">text_splitter</span> <span class="o">=</span> <span class="n">RecursiveCharacterTextSplitter</span><span class="p">(</span>
@@ -1343,12 +1340,10 @@
 </span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">all_splits</span> <span class="o">=</span> <span class="n">text_splitter</span><span class="o">.</span><span class="n">split_documents</span><span class="p">(</span><span class="n">docs</span><span class="p">)</span>
 </span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
 </span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="nb">len</span><span class="p">(</span><span class="n">all_splits</span><span class="p">)</span> <span class="c1"># 524</span>
-</span></code></pre></div>
-<ol>
+</span></code></pre></div></li>
 <li>Store：我们需要某个地方来存储和索引我们的split，以便以后可以搜索它们。这通常是使用 VectorStore 和 Embeddings 模型完成的。具体来讲，先用embedding模型将文本/图像/……数据投射成向量，然后存储在一个空间内，这样可以基于向量距离查询相似度，
-返回在embedding最相近的语句。</li>
-</ol>
-<p><div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">results</span> <span class="o">=</span> <span class="n">vector_store</span><span class="o">.</span><span class="n">similarity_search_with_score</span><span class="p">(</span><span class="s2">&quot;What was Nike&#39;s revenue in 2023?&quot;</span><span class="p">)</span>
+返回在embedding最相近的语句。
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">results</span> <span class="o">=</span> <span class="n">vector_store</span><span class="o">.</span><span class="n">similarity_search_with_score</span><span class="p">(</span><span class="s2">&quot;What was Nike&#39;s revenue in 2023?&quot;</span><span class="p">)</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">doc</span><span class="p">,</span> <span class="n">score</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Score: </span><span class="si">{</span><span class="n">score</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 </span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">doc</span><span class="p">)</span>
@@ -1367,7 +1362,8 @@
 </span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>increase was primarily due to higher revenues in Men&#39;s, the Jordan Brand, Women&#39;s and Kids&#39; which grew 17%, 35%,11% and 10%, respectively, on a wholesale
 </span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>equivalent basis.&#39; metadata={&#39;page&#39;: 35, &#39;source&#39;: &#39;../example_data/nke-10k-2023.pdf&#39;, &#39;start_index&#39;: 0}
 </span></code></pre></div>
-<img alt="alt text" src="../RAG%E5%85%A5%E9%97%A8.assets/1.png" /></p>
+<img alt="alt text" src="../RAG%E5%85%A5%E9%97%A8.assets/1.png" /></li>
+</ol>
 <h3 id="retrieval">Retrieval<a class="headerlink" href="#retrieval" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
@@ -1377,6 +1373,7 @@
 <p>Generate ：ChatModel / LLM 使用提示生成答案，该提示包括问题和检索到的数据</p>
 </li>
 </ol>
+<p><img alt="alt text" src="../RAG%E5%85%A5%E9%97%A8.assets/2.png" /></p>
 <h2 id="简单预览">简单预览<a class="headerlink" href="#简单预览" title="Permanent link">&para;</a></h2>
 <p>只需50多行，就可以实现一个基本的RAG。</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">bs4</span>
