@@ -336,6 +336,8 @@
       
         
       
+        
+      
     
     
       
@@ -699,6 +701,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -755,11 +761,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Nerual_Network/%E4%BB%8E%E7%BF%BB%E8%AF%91%E5%88%B0Transformer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.机器翻译
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Nerual_Network/%E5%85%B6%E5%AE%83%E6%9E%B6%E6%9E%84/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    其它架构
+    3.其它架构
     
   </span>
   
@@ -782,6 +810,108 @@
   
   <span class="md-ellipsis">
     1.激活函数
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nerual_Network/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.安全攻防
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    RAG
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            RAG
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RAG/RAG%E5%85%A5%E9%97%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.RAG入门
     
   </span>
   
@@ -1228,18 +1358,18 @@
 <li>调用工具的智能体：使用JSON调用其它<code>tool</code>函数</li>
 </ul>
 <p>下面是一个例子：code agent会创建如此代码</p>
-<pre><code class="language-python">for query in [
-    &quot;Best catering services in Gotham City&quot;, 
-    &quot;Party theme ideas for superheroes&quot;
-]:
-    print(web_search(f&quot;Search for: {query}&quot;))
-</code></pre>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">for</span> <span class="n">query</span> <span class="ow">in</span> <span class="p">[</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="s2">&quot;Best catering services in Gotham City&quot;</span><span class="p">,</span> 
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="s2">&quot;Party theme ideas for superheroes&quot;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">]:</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">web_search</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Search for: </span><span class="si">{</span><span class="n">query</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">))</span>
+</span></code></pre></div>
 <p>而tool calling agent会创建如此JSON：</p>
-<pre><code class="language-json">[
-    {&quot;name&quot;: &quot;web_search&quot;, &quot;arguments&quot;: &quot;Best catering services in Gotham City&quot;},
-    {&quot;name&quot;: &quot;web_search&quot;, &quot;arguments&quot;: &quot;Party theme ideas for superheroes&quot;}
-]
-</code></pre>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">[</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="p">{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;web_search&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;arguments&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Best catering services in Gotham City&quot;</span><span class="p">},</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="p">{</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;web_search&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;arguments&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Party theme ideas for superheroes&quot;</span><span class="p">}</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">]</span>
+</span></code></pre></div>
 <h3 id="memory与每次运行流程">Memory与每次运行流程<a class="headerlink" href="#memory与每次运行流程" title="Permanent link">&para;</a></h3>
 <p>总体上，如下图所示，Agent维护一个Memory，最开始是空的，每次思考后，将反馈添加到Memory中，然后再将<code>`System_Prompt</code>和<code>Memory</code>拼一起进行思考。<img alt="Agent_ManimCE" src="../Agent%E6%A1%86%E6%9E%B6.assets/Agent_ManimCE.gif" /></p>
 <h3 id="多智体">多智体<a class="headerlink" href="#多智体" title="Permanent link">&para;</a></h3>
@@ -1247,42 +1377,42 @@
 <p><img alt="多智体分工" src="../Agent%E6%A1%86%E6%9E%B6.assets/image.png" /></p>
 <h3 id="实战细节">实战细节<a class="headerlink" href="#实战细节" title="Permanent link">&para;</a></h3>
 <p>如下定义web agent，其中<code>description</code>给上层提供了它的职能。</p>
-<pre><code class="language-python">web_agent = CodeAgent(
-    model=model,
-    tools=[
-        GoogleSearchTool(provider=&quot;serper&quot;),
-        VisitWebpageTool(),
-        calculate_cargo_travel_time,
-    ],
-    name=&quot;web_agent&quot;,
-    description=&quot;Browses the web to find information&quot;,
-    verbosity_level=0,
-    max_steps=10,
-)
-</code></pre>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">web_agent</span> <span class="o">=</span> <span class="n">CodeAgent</span><span class="p">(</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="n">model</span><span class="o">=</span><span class="n">model</span><span class="p">,</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="n">tools</span><span class="o">=</span><span class="p">[</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>        <span class="n">GoogleSearchTool</span><span class="p">(</span><span class="n">provider</span><span class="o">=</span><span class="s2">&quot;serper&quot;</span><span class="p">),</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>        <span class="n">VisitWebpageTool</span><span class="p">(),</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>        <span class="n">calculate_cargo_travel_time</span><span class="p">,</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="p">],</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;web_agent&quot;</span><span class="p">,</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Browses the web to find information&quot;</span><span class="p">,</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    <span class="n">verbosity_level</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    <span class="n">max_steps</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="p">)</span>
+</span></code></pre></div>
 <p>如下定义manage agent，其中<code>managed_agents</code>列出了它的子智能体。<code>planning_interval</code>规定多少次行动后进行一次规划，是个能耗平衡的参数。</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>沙盒环境中，本来没有额外库或包，但是可以手动授权导入。</p>
 </div>
-<pre><code class="language-python">manager_agent = CodeAgent(
-    model=HfApiModel(&quot;deepseek-ai/DeepSeek-R1&quot;, provider=&quot;together&quot;, max_tokens=8096),
-    tools=[calculate_cargo_travel_time],
-    managed_agents=[web_agent],
-    additional_authorized_imports=[
-        &quot;geopandas&quot;,
-        &quot;plotly&quot;,
-        &quot;shapely&quot;,
-        &quot;json&quot;,
-        &quot;pandas&quot;,
-        &quot;numpy&quot;,
-    ],
-    planning_interval=5,
-    verbosity_level=2,
-    final_answer_checks=[check_reasoning_and_plot],
-    max_steps=15,
-)
-</code></pre>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">manager_agent</span> <span class="o">=</span> <span class="n">CodeAgent</span><span class="p">(</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="n">model</span><span class="o">=</span><span class="n">HfApiModel</span><span class="p">(</span><span class="s2">&quot;deepseek-ai/DeepSeek-R1&quot;</span><span class="p">,</span> <span class="n">provider</span><span class="o">=</span><span class="s2">&quot;together&quot;</span><span class="p">,</span> <span class="n">max_tokens</span><span class="o">=</span><span class="mi">8096</span><span class="p">),</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="n">tools</span><span class="o">=</span><span class="p">[</span><span class="n">calculate_cargo_travel_time</span><span class="p">],</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="n">managed_agents</span><span class="o">=</span><span class="p">[</span><span class="n">web_agent</span><span class="p">],</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="n">additional_authorized_imports</span><span class="o">=</span><span class="p">[</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>        <span class="s2">&quot;geopandas&quot;</span><span class="p">,</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>        <span class="s2">&quot;plotly&quot;</span><span class="p">,</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>        <span class="s2">&quot;shapely&quot;</span><span class="p">,</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>        <span class="s2">&quot;json&quot;</span><span class="p">,</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>        <span class="s2">&quot;pandas&quot;</span><span class="p">,</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>        <span class="s2">&quot;numpy&quot;</span><span class="p">,</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>    <span class="p">],</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>    <span class="n">planning_interval</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>    <span class="n">verbosity_level</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>    <span class="n">final_answer_checks</span><span class="o">=</span><span class="p">[</span><span class="n">check_reasoning_and_plot</span><span class="p">],</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>    <span class="n">max_steps</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="p">)</span>
+</span></code></pre></div>
 <h3 id="带图像视觉的">带图像视觉的<a class="headerlink" href="#带图像视觉的" title="Permanent link">&para;</a></h3>
 <p><code>log</code>就是执行的所有细节，包括过程，参数，结果等等。每一步最后都要callback，截个图，保留一定步数内的截图。</p>
 <p><img alt="Dynamic image retrieval" src="../Agent%E6%A1%86%E6%9E%B6.assets/diagram_adding_vlms_smolagents.png" /></p>

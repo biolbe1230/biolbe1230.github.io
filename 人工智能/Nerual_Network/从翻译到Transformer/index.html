@@ -30,13 +30,13 @@
       
       
       
-        <link rel="canonical" href="http://biolbe1230.github.io/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/LLM/LLM%E5%85%A5%E9%97%A8/">
+        <link rel="canonical" href="http://biolbe1230.github.io/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/Nerual_Network/%E4%BB%8E%E7%BF%BB%E8%AF%91%E5%88%B0Transformer/">
       
       
         <link rel="prev" href="../">
       
       
-        <link rel="next" href="../../Nerual_Network/">
+        <link rel="next" href="../%E5%85%B6%E5%AE%83%E6%9E%B6%E6%9E%84/">
       
       
       <link rel="icon" href="../../../img/fav.png">
@@ -44,7 +44,7 @@
     
     
       
-        <title>LLM入门 - 买不到桂花的博客</title>
+        <title>4.机器翻译 - 买不到桂花的博客</title>
       
     
     
@@ -107,7 +107,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#不同命名" class="md-skip">
+        <a href="#rnn-lm" class="md-skip">
           跳转至
         </a>
       
@@ -140,7 +140,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              LLM入门
+              4.机器翻译
             
           </span>
         </div>
@@ -497,6 +497,100 @@
                 
   
   
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../LLM/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    LLM
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            LLM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LLM/LLM%E5%85%A5%E9%97%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LLM入门
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -506,6 +600,12 @@
       
         
           
+        
+      
+        
+      
+        
+      
         
       
         
@@ -525,7 +625,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
           
@@ -534,7 +634,7 @@
               
   
   <span class="md-ellipsis">
-    LLM
+    Nerual Network
     
   </span>
   
@@ -542,16 +642,16 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
-            LLM
+            Nerual Network
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -575,7 +675,7 @@
           
   
   <span class="md-ellipsis">
-    LLM入门
+    4.机器翻译
     
   </span>
   
@@ -587,7 +687,7 @@
         
   
   <span class="md-ellipsis">
-    LLM入门
+    4.机器翻译
     
   </span>
   
@@ -608,9 +708,162 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#不同命名" class="md-nav__link">
+  <a href="#rnn-lm" class="md-nav__link">
     <span class="md-ellipsis">
-      不同命名
+      RNN-LM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RNN-LM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#训练" class="md-nav__link">
+    <span class="md-ellipsis">
+      训练
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decode算法" class="md-nav__link">
+    <span class="md-ellipsis">
+      decode算法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="decode算法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#greedy-search-贪婪搜索" class="md-nav__link">
+    <span class="md-ellipsis">
+      Greedy Search (贪婪搜索)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#random-sampling-纯随机采样" class="md-nav__link">
+    <span class="md-ellipsis">
+      Random Sampling (纯随机采样)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#top-k-sampling-top-k-采样" class="md-nav__link">
+    <span class="md-ellipsis">
+      Top-K Sampling (Top-K 采样)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#top-p-sampling-nucleus-sampling--核心采样" class="md-nav__link">
+    <span class="md-ellipsis">
+      Top-P Sampling (Nucleus Sampling / 核心采样)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pure-sampling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pure sampling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beam-search-decoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Beam search decoding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#softmax-temperature" class="md-nav__link">
+    <span class="md-ellipsis">
+      Softmax temperature
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#评估" class="md-nav__link">
+    <span class="md-ellipsis">
+      评估
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="评估">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#人工评估" class="md-nav__link">
+    <span class="md-ellipsis">
+      人工评估
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bleu" class="md-nav__link">
+    <span class="md-ellipsis">
+      BLEU
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#meteor" class="md-nav__link">
+    <span class="md-ellipsis">
+      METEOR
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perplexity-ppl" class="md-nav__link">
+    <span class="md-ellipsis">
+      Perplexity (PPL)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#statistic-machine-translation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Statistic Machine Translation
     </span>
   </a>
   
@@ -625,84 +878,6 @@
 
               
             
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
-        
-          
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../Nerual_Network/" class="md-nav__link ">
-              
-  
-  <span class="md-ellipsis">
-    Nerual Network
-    
-  </span>
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3">
-            <span class="md-nav__icon md-icon"></span>
-            Nerual Network
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
               
                 
   
@@ -710,29 +885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Nerual_Network/%E4%BB%8E%E7%BF%BB%E8%AF%91%E5%88%B0Transformer/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    4.机器翻译
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Nerual_Network/%E5%85%B6%E5%AE%83%E6%9E%B6%E6%9E%84/" class="md-nav__link">
+      <a href="../%E5%85%B6%E5%AE%83%E6%9E%B6%E6%9E%84/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -754,7 +907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Nerual_Network/%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0/" class="md-nav__link">
+      <a href="../%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -776,7 +929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Nerual_Network/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" class="md-nav__link">
+      <a href="../%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1180,9 +1333,162 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#不同命名" class="md-nav__link">
+  <a href="#rnn-lm" class="md-nav__link">
     <span class="md-ellipsis">
-      不同命名
+      RNN-LM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RNN-LM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#训练" class="md-nav__link">
+    <span class="md-ellipsis">
+      训练
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decode算法" class="md-nav__link">
+    <span class="md-ellipsis">
+      decode算法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="decode算法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#greedy-search-贪婪搜索" class="md-nav__link">
+    <span class="md-ellipsis">
+      Greedy Search (贪婪搜索)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#random-sampling-纯随机采样" class="md-nav__link">
+    <span class="md-ellipsis">
+      Random Sampling (纯随机采样)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#top-k-sampling-top-k-采样" class="md-nav__link">
+    <span class="md-ellipsis">
+      Top-K Sampling (Top-K 采样)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#top-p-sampling-nucleus-sampling--核心采样" class="md-nav__link">
+    <span class="md-ellipsis">
+      Top-P Sampling (Nucleus Sampling / 核心采样)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pure-sampling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pure sampling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beam-search-decoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Beam search decoding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#softmax-temperature" class="md-nav__link">
+    <span class="md-ellipsis">
+      Softmax temperature
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#评估" class="md-nav__link">
+    <span class="md-ellipsis">
+      评估
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="评估">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#人工评估" class="md-nav__link">
+    <span class="md-ellipsis">
+      人工评估
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bleu" class="md-nav__link">
+    <span class="md-ellipsis">
+      BLEU
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#meteor" class="md-nav__link">
+    <span class="md-ellipsis">
+      METEOR
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perplexity-ppl" class="md-nav__link">
+    <span class="md-ellipsis">
+      Perplexity (PPL)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#statistic-machine-translation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Statistic Machine Translation
     </span>
   </a>
   
@@ -1202,21 +1508,150 @@
                 
                   
 
+  <nav class="md-tags" >
+    
+      
+      
+      
+        <span class="md-tag">AI</span>
+      
+    
+      
+      
+      
+        <span class="md-tag">Basic</span>
+      
+    
+      
+      
+      
+        <span class="md-tag">LLM</span>
+      
+    
+      
+      
+      
+        <span class="md-tag">NN</span>
+      
+    
+  </nav>
 
 
-  <h1>LLM入门</h1>
 
-<h2 id="不同命名">不同命名<a class="headerlink" href="#不同命名" title="Permanent link">&para;</a></h2>
+  <h1>4.机器翻译</h1>
+
+<h2 id="rnn-lm">RNN-LM<a class="headerlink" href="#rnn-lm" title="Permanent link">&para;</a></h2>
+<p>Language Model是给定一个词汇序列，生成下一个词汇概率的模型，使用RNN的LM就叫做RNN-LM。如下，整个序列的信息通过hidden 
+state传递，每次输入上次输出的单词，输出下一个单词。
+<img alt="alt text" src="../%E4%BB%8E%E7%BF%BB%E8%AF%91%E5%88%B0Transformer.assets/RNN1.png" style="display: block; margin-left: auto; margin-right: auto;" width="80%" />
+如下是将encoder加入的翻译器结构。
+<img alt="alt text" src="../%E4%BB%8E%E7%BF%BB%E8%AF%91%E5%88%B0Transformer.assets/RNN2.png" style="display: block; margin-left: auto; margin-right: auto;" width="80%" /></p>
+<h3 id="训练">训练<a class="headerlink" href="#训练" title="Permanent link">&para;</a></h3>
+<p>RNN-LM 通常通过最大化训练语料库的似然来训练。这等价于最小化负对数似然（也就是交叉熵损失）。在每个时间步，模型预测下一个词的概率分布，并将其与实际的下一个词进行比较，计算损失。使用反向传播算法的变体 BPTT (Backpropagation Through Time) 来计算梯度并更新模型参数。
+ 最开始，可以使用<strong>Teacher Forcing</strong>进行训练，给decoder输入一些“金句”，即参考句子，不管它输出什么。</p>
+<h3 id="decode算法">decode算法<a class="headerlink" href="#decode算法" title="Permanent link">&para;</a></h3>
+<p>现在我们训好了一个LM，可以预测下一个词汇的概率，但我们该怎么用它生成一个句子呢？<strong>在decoder中，该怎么决定每次输出哪个呢？</strong></p>
+<h4 id="greedy-search-贪婪搜索">Greedy Search (贪婪搜索)<a class="headerlink" href="#greedy-search-贪婪搜索" title="Permanent link">&para;</a></h4>
+<p><strong>方法</strong>: 在每个时间步，总是选择概率最高的那个词 (argmax)。</p>
+<p><strong>问题</strong>：太过确定，总会选择高频词，不会选择冷门词汇，并且容易陷入循环。</p>
+<p><strong>和argmax区别</strong>：argmax 是 Greedy Search 在每一步决策时使用的具体<strong>工具</strong>，而 Greedy Search 是使用这个工具来构建完整序列的<strong>策略</strong>。</p>
+<h4 id="random-sampling-纯随机采样">Random Sampling (纯随机采样)<a class="headerlink" href="#random-sampling-纯随机采样" title="Permanent link">&para;</a></h4>
+<p><strong>方法</strong>：如其名，随机选。。</p>
+<p><strong>问题</strong>：全是问题</p>
+<h4 id="top-k-sampling-top-k-采样">Top-K Sampling (Top-K 采样)<a class="headerlink" href="#top-k-sampling-top-k-采样" title="Permanent link">&para;</a></h4>
+<p><strong>方法</strong>: 在每个时间步，只考虑概率最高的 K 个词。将这 K 个词的原始概率（或经过温度调整后的概率）重新归一化，然后从这个缩小的集合中进行采样。</p>
+<p><strong>问题</strong>：K在不同情况下的最优值不一样，但是作为超参数，我们只能让其为固定值。</p>
+<h4 id="top-p-sampling-nucleus-sampling--核心采样">Top-P Sampling (Nucleus Sampling / 核心采样)<a class="headerlink" href="#top-p-sampling-nucleus-sampling--核心采样" title="Permanent link">&para;</a></h4>
+<p><strong>方法</strong>: 选择一个概率阈值 p (例如 p=0.9)。在每个时间步，按概率降序排列词汇，然后选择概率之和刚好大于或等于 p 的最小词汇集合。然后，将这个集合中的词的概率重新归一化，并从中采样。</p>
+<p><strong>问题</strong>: 仍然需要选择合适的 p 值，但通常比选择 K 更鲁棒一些。</p>
+<h4 id="pure-sampling">Pure sampling<a class="headerlink" href="#pure-sampling" title="Permanent link">&para;</a></h4>
+<p><strong>方法</strong>: 选择一个概率阈值 p (例如 p=0.9)。在每个时间步，按概率降序排列词汇，然后选择概率之和刚好大于或等于 p 的最小词汇集合。然后，将这个集合中的词的概率重新归一化，并从中采样。</p>
+<p><strong>问题</strong>: 仍然需要选择合适的 p 值，但通常比选择 K 更鲁棒一些。</p>
+<h4 id="beam-search-decoding">Beam search decoding<a class="headerlink" href="#beam-search-decoding" title="Permanent link">&para;</a></h4>
+<p>每一步，只留k个最可能的项，k=1是就是贪婪算法。
+<img alt="alt text" src="../%E4%BB%8E%E7%BF%BB%E8%AF%91%E5%88%B0Transformer.assets/RNN3.png" style="display: block; margin-left: auto; margin-right: auto;" width="50%" /></p>
+<h4 id="softmax-temperature">Softmax temperature<a class="headerlink" href="#softmax-temperature" title="Permanent link">&para;</a></h4>
+<p>在传统softmax中加入了温度t，将每个概率先除以t，在作为指数进行softmax。</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>p</mi><mi>i</mi></msub><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo><mo>=</mo><mi>s</mi><mi>o</mi><mi>f</mi><mi>t</mi><mi>m</mi><mi>a</mi><mi>x</mi><mo stretchy="false">(</mo><msub><mi>z</mi><mi>i</mi></msub><mrow><mo>/</mo></mrow><mi>T</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><msup><mi>e</mi><mrow><mo stretchy="false">(</mo><mfrac><msub><mi>z</mi><mi>i</mi></msub><mi>T</mi></mfrac><mo stretchy="false">)</mo></mrow></msup><mrow><mi>s</mi><mi>u</mi><mi>m</mi><mo stretchy="false">(</mo><msup><mi>e</mi><mrow><mo stretchy="false">(</mo><mfrac><msub><mi>z</mi><mi>j</mi></msub><mi>T</mi></mfrac><mo stretchy="false">)</mo></mrow></msup><mo stretchy="false">)</mo></mrow></mfrac></math>
+
 <ul>
-<li>Base：Base模型在原始文本上训练，以预测下一个token</li>
-<li>Instruct：专门微调，以遵循指令。有模板</li>
+<li>T &gt; 1：不同概率彼此之间的差距相对缩小了，低概率选项也有了更高的被采样机会，生成的序列会更加多样化。</li>
+<li>T &lt; 1：模型会更倾向于选择它认为最可能的选项。生成的序列会更加保守、可预测，更接近于模型的“核心”知识。</li>
 </ul>
+<p>就像deepseek的api文档里，编程t=0，分析t=1，诗歌创作t=1.5。</p>
+<h3 id="评估">评估<a class="headerlink" href="#评估" title="Permanent link">&para;</a></h3>
+<h4 id="人工评估">人工评估<a class="headerlink" href="#人工评估" title="Permanent link">&para;</a></h4>
+<p>准确全面，但昂贵耗时主观。</p>
+<h4 id="bleu">BLEU<a class="headerlink" href="#bleu" title="Permanent link">&para;</a></h4>
+<p>比较机器翻译输出（Candidate）和一个或多个高质量的人工参考翻译（References）之间n-gram（通常是 1 到 4-gram）的重叠程度。</p>
+<p>计算方法：</p>
+<ul>
+<li>
+<p>计算各阶 n-gram 精度 (Precision): 对于 n=1, 2, 3, 4，计算候选译文中 n-gram 出现在 任一 参考译文中的比例。</p>
+</li>
+<li>
+<p>修正精度 (Modified Precision): 为了防止某个词重复出现过多而获得不合理的高分，一个候选 n-gram 的计数不能超过它在 任何单个 参考译文中出现的最大次数（Clipped Count）。</p>
+</li>
+<li>
+<p>短句惩罚 (Brevity Penalty, BP): 如果Candidate译文比Ref译文短很多，即使精度很高，也可能遗漏了信息。BP 会惩罚过短的句子。BP &lt;= 1，当候选译文长度接近或超过最短参考译文长度时，BP=1。</p>
+</li>
+<li>
+<p>最终得分: BLEU = BP * geometric_mean(p1, p2, p3, p4)</p>
+</li>
+</ul>
+<p>但是,在句子级别 (Sentence Level) 相关性差，且不关心语义，语法。</p>
+<h4 id="meteor">METEOR<a class="headerlink" href="#meteor" title="Permanent link">&para;</a></h4>
+<p>类似BLEU，但是：</p>
+<ul>
+<li>考虑同义词和词干：比 BLEU 更懂语义。</li>
+<li>考虑词序 (通过碎片惩罚): 对语序不佳的翻译会扣分。</li>
+</ul>
+<h4 id="perplexity-ppl">Perplexity (PPL)<a class="headerlink" href="#perplexity-ppl" title="Permanent link">&para;</a></h4>
+<p>衡量一个语言模型对一段给定文本的预测能力。PPL 越低，表示 LM 认为这段文本出现的概率越高，也就是越符合该 LM 所学习到的语言模式。</p>
+<h2 id="statistic-machine-translation">Statistic Machine Translation<a class="headerlink" href="#statistic-machine-translation" title="Permanent link">&para;</a></h2>
+<p>统计机器翻译（SMT）：最初是算词库中，所有词哪个概率最大；或者对于一句话，另一个语言中哪个句子概率最大</p>
+<p><code>ê = argmax_e P(e|f)</code></p>
+<ul>
+<li><code>ê</code> 是我们找到的最佳翻译结果。</li>
+<li><code>argmax_e</code> 表示在所有可能的目标语言句子 <em>e</em> 中寻找。</li>
+<li><code>P(e|f)</code> 是“给定源语言句子 <em>f</em>，目标语言句子 <em>e</em> 是其正确翻译的概率”。然而它很难精确求解。</li>
+</ul>
+<p>​   这时用到贝叶斯公式：<code>P(e|f) = [ P(f|e) * P(e) ] / P(f)</code>，<code>P(f)</code>是常数，因为翻译的句子已经给出，此时之前的公式变成</p>
+<p>​                           <code>ê = argmax_e P(f|e) * P(e)</code>。</p>
+<p>​   <strong>此公式是SMT的基石</strong>。它将翻译问题分解成了两个部分：</p>
+<ul>
+<li><strong>翻译模型 (Translation Model) - <code>P(f|e)</code></strong>：</li>
+</ul>
+<p>​   给定一个目标语言句子 <em>e</em>，它对应回源语言句子 <em>f</em> 的概率是多少？</p>
+<p>​   通过Alignment，词对齐，或者短语对齐来求。</p>
+<p><img alt="image-20250411143709701" src="../%E4%BB%8E%E7%BF%BB%E8%AF%91%E5%88%B0Transformer.assets/SMT1.png" style="display: block; margin-left: auto; margin-right: auto;" width="80%" /></p>
+<ul>
+<li>
+<p><strong>语言模型 (Language Model) - <code>P(e)</code></strong>:</p>
+<p>目标语言句子 <em>e</em> 本身有多么<strong>流利 (Fluency)</strong> 和自然？一个语法正确、符合目标语言表达习惯的句子，其概率 <code>P(e)</code> 会更高。</p>
+<p>通过<strong>N-gram</strong>计算, 它假设一个词出现的概率主要取决于它前面紧邻的 N-1 个词。</p>
+<ul>
+<li>计算: 整个句子 <em>e</em> 的概率 <code>P(e)</code> 通过链式法则近似计算为各个 N-gram 概率的乘积。例如，<code>P(w₁, w₂, ..., wₙ) ≈ P(w₁) * P(w₂|w₁) * P(w₃|w₁, w₂) * ... * P(wₙ|wₙ₋₁, wₙ₋₂)</code>.</li>
+</ul>
+<p><strong>训练</strong>: 语言模型通过分析大量的<strong>单语语料库</strong>（只需要目标语言的文本）来学习词语序列的出现频率，从而估计 N-gram 概率。</p>
+</li>
+</ul>
+<p>最后，还要接上一个解码器，它是一个搜索算法，它的任务是在巨大的可能翻译空间中，找到那个能够最大化 <code>P(f|e) * P(e)</code> 乘积的目标句子 <em>e</em>。</p>
+<ol>
+<li>Neural Network</li>
+</ol>
+<p>进入attention了</p>
+<p>Q是把输入转化成我们关心的方面的信息，如是词性？</p>
+<p>解码并行不了，所以很多都只有encoder</p>
 
 
 
 
 
 
+
+  
+  
 
 
 
