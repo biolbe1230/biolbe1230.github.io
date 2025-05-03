@@ -30,13 +30,13 @@
       
       
       
-        <link rel="canonical" href="http://biolbe1230.github.io/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/Nerual_Network/%E4%BB%8E%E7%BF%BB%E8%AF%91%E5%88%B0Transformer/">
+        <link rel="canonical" href="http://biolbe1230.github.io/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/Nerual_Network/1%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0/">
       
       
         <link rel="prev" href="../">
       
       
-        <link rel="next" href="../%E5%85%B6%E5%AE%83%E6%9E%B6%E6%9E%84/">
+        <link rel="next" href="../2%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/">
       
       
       <link rel="icon" href="../../../img/fav.png">
@@ -44,7 +44,7 @@
     
     
       
-        <title>4.机器翻译 - 买不到桂花的博客</title>
+        <title>1.激活函数 - 买不到桂花的博客</title>
       
     
     
@@ -107,7 +107,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#rnn-lm" class="md-skip">
+        <a href="#relu" class="md-skip">
           跳转至
         </a>
       
@@ -140,7 +140,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              4.机器翻译
+              1.激活函数
             
           </span>
         </div>
@@ -151,6 +151,43 @@
     
     
     
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     
     
   </nav>
@@ -675,7 +712,7 @@
           
   
   <span class="md-ellipsis">
-    4.机器翻译
+    1.激活函数
     
   </span>
   
@@ -687,7 +724,7 @@
         
   
   <span class="md-ellipsis">
-    4.机器翻译
+    1.激活函数
     
   </span>
   
@@ -708,150 +745,75 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#rnn-lm" class="md-nav__link">
+  <a href="#relu" class="md-nav__link">
     <span class="md-ellipsis">
-      RNN-LM
+      ReLU
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="RNN-LM">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relu-变种" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReLU 变种
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ReLU 变种">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#训练" class="md-nav__link">
+  <a href="#leaky-relu" class="md-nav__link">
     <span class="md-ellipsis">
-      训练
+      Leaky ReLU
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#decode算法" class="md-nav__link">
+  <a href="#prelu" class="md-nav__link">
     <span class="md-ellipsis">
-      decode算法
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="decode算法">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#greedy-search-贪婪搜索" class="md-nav__link">
-    <span class="md-ellipsis">
-      Greedy Search (贪婪搜索)
+      PReLU
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#random-sampling-纯随机采样" class="md-nav__link">
+  <a href="#elu" class="md-nav__link">
     <span class="md-ellipsis">
-      Random Sampling (纯随机采样)
+      ELU
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#top-k-sampling-top-k-采样" class="md-nav__link">
+  <a href="#selu" class="md-nav__link">
     <span class="md-ellipsis">
-      Top-K Sampling (Top-K 采样)
+      SELU
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#top-p-sampling-nucleus-sampling--核心采样" class="md-nav__link">
+  <a href="#silu" class="md-nav__link">
     <span class="md-ellipsis">
-      Top-P Sampling (Nucleus Sampling / 核心采样)
+      SiLU
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pure-sampling" class="md-nav__link">
+  <a href="#gelu" class="md-nav__link">
     <span class="md-ellipsis">
-      Pure sampling
+      GELU
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#beam-search-decoding" class="md-nav__link">
-    <span class="md-ellipsis">
-      Beam search decoding
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#softmax-temperature" class="md-nav__link">
-    <span class="md-ellipsis">
-      Softmax temperature
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#评估" class="md-nav__link">
-    <span class="md-ellipsis">
-      评估
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="评估">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#人工评估" class="md-nav__link">
-    <span class="md-ellipsis">
-      人工评估
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bleu" class="md-nav__link">
-    <span class="md-ellipsis">
-      BLEU
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#meteor" class="md-nav__link">
-    <span class="md-ellipsis">
-      METEOR
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#perplexity-ppl" class="md-nav__link">
-    <span class="md-ellipsis">
-      Perplexity (PPL)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -861,11 +823,53 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#statistic-machine-translation" class="md-nav__link">
+  <a href="#sigmoid" class="md-nav__link">
     <span class="md-ellipsis">
-      Statistic Machine Translation
+      Sigmoid
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tanh" class="md-nav__link">
+    <span class="md-ellipsis">
+      tanh
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#softmax" class="md-nav__link">
+    <span class="md-ellipsis">
+      Softmax
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Softmax">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#softmin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Softmin
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logsoftmax" class="md-nav__link">
+    <span class="md-ellipsis">
+      LogSoftmax
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -885,7 +889,29 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E5%85%B6%E5%AE%83%E6%9E%B6%E6%9E%84/" class="md-nav__link">
+      <a href="../2%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.安全攻防
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3%E5%85%B6%E5%AE%83%E6%9E%B6%E6%9E%84/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -907,33 +933,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0/" class="md-nav__link">
+      <a href="../4%E4%BB%8E%E7%BF%BB%E8%AF%91%E5%88%B0Transformer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    1.激活函数
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    2.安全攻防
+    4.机器翻译
     
   </span>
   
@@ -1011,11 +1015,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../RAG/RAG%E4%BC%98%E5%8C%96/" class="md-nav__link">
+      <a href="../../RAG/1RAG%E5%85%A5%E9%97%A8/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    2.RAG优化
+    1.RAG入门
     
   </span>
   
@@ -1033,11 +1037,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../RAG/RAG%E5%85%A5%E9%97%A8/" class="md-nav__link">
+      <a href="../../RAG/2RAG%E4%BC%98%E5%8C%96/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    1.RAG入门
+    2.RAG优化
     
   </span>
   
@@ -1357,150 +1361,75 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#rnn-lm" class="md-nav__link">
+  <a href="#relu" class="md-nav__link">
     <span class="md-ellipsis">
-      RNN-LM
+      ReLU
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="RNN-LM">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relu-变种" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReLU 变种
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ReLU 变种">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#训练" class="md-nav__link">
+  <a href="#leaky-relu" class="md-nav__link">
     <span class="md-ellipsis">
-      训练
+      Leaky ReLU
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#decode算法" class="md-nav__link">
+  <a href="#prelu" class="md-nav__link">
     <span class="md-ellipsis">
-      decode算法
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="decode算法">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#greedy-search-贪婪搜索" class="md-nav__link">
-    <span class="md-ellipsis">
-      Greedy Search (贪婪搜索)
+      PReLU
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#random-sampling-纯随机采样" class="md-nav__link">
+  <a href="#elu" class="md-nav__link">
     <span class="md-ellipsis">
-      Random Sampling (纯随机采样)
+      ELU
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#top-k-sampling-top-k-采样" class="md-nav__link">
+  <a href="#selu" class="md-nav__link">
     <span class="md-ellipsis">
-      Top-K Sampling (Top-K 采样)
+      SELU
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#top-p-sampling-nucleus-sampling--核心采样" class="md-nav__link">
+  <a href="#silu" class="md-nav__link">
     <span class="md-ellipsis">
-      Top-P Sampling (Nucleus Sampling / 核心采样)
+      SiLU
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pure-sampling" class="md-nav__link">
+  <a href="#gelu" class="md-nav__link">
     <span class="md-ellipsis">
-      Pure sampling
+      GELU
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#beam-search-decoding" class="md-nav__link">
-    <span class="md-ellipsis">
-      Beam search decoding
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#softmax-temperature" class="md-nav__link">
-    <span class="md-ellipsis">
-      Softmax temperature
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#评估" class="md-nav__link">
-    <span class="md-ellipsis">
-      评估
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="评估">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#人工评估" class="md-nav__link">
-    <span class="md-ellipsis">
-      人工评估
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bleu" class="md-nav__link">
-    <span class="md-ellipsis">
-      BLEU
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#meteor" class="md-nav__link">
-    <span class="md-ellipsis">
-      METEOR
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#perplexity-ppl" class="md-nav__link">
-    <span class="md-ellipsis">
-      Perplexity (PPL)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -1510,11 +1439,53 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#statistic-machine-translation" class="md-nav__link">
+  <a href="#sigmoid" class="md-nav__link">
     <span class="md-ellipsis">
-      Statistic Machine Translation
+      Sigmoid
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tanh" class="md-nav__link">
+    <span class="md-ellipsis">
+      tanh
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#softmax" class="md-nav__link">
+    <span class="md-ellipsis">
+      Softmax
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Softmax">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#softmin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Softmin
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logsoftmax" class="md-nav__link">
+    <span class="md-ellipsis">
+      LogSoftmax
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1562,111 +1533,77 @@
 
 
 
-  <h1>4.机器翻译</h1>
+  <h1>1.激活函数</h1>
 
-<h2 id="rnn-lm">RNN-LM<a class="headerlink" href="#rnn-lm" title="Permanent link">&para;</a></h2>
-<p>Language Model是给定一个词汇序列，生成下一个词汇概率的模型，使用RNN的LM就叫做RNN-LM。如下，整个序列的信息通过hidden 
-state传递，每次输入上次输出的单词，输出下一个单词。
-<img alt="alt text" src="../%E4%BB%8E%E7%BF%BB%E8%AF%91%E5%88%B0Transformer.assets/RNN1.png" style="display: block; margin-left: auto; margin-right: auto;" width="80%" />
-如下是将encoder加入的翻译器结构。
-<img alt="alt text" src="../%E4%BB%8E%E7%BF%BB%E8%AF%91%E5%88%B0Transformer.assets/RNN2.png" style="display: block; margin-left: auto; margin-right: auto;" width="80%" /></p>
-<h3 id="训练">训练<a class="headerlink" href="#训练" title="Permanent link">&para;</a></h3>
-<p>RNN-LM 通常通过最大化训练语料库的似然来训练。这等价于最小化负对数似然（也就是交叉熵损失）。在每个时间步，模型预测下一个词的概率分布，并将其与实际的下一个词进行比较，计算损失。使用反向传播算法的变体 BPTT (Backpropagation Through Time) 来计算梯度并更新模型参数。
- 最开始，可以使用<strong>Teacher Forcing</strong>进行训练，给decoder输入一些“金句”，即参考句子，不管它输出什么。</p>
-<h3 id="decode算法">decode算法<a class="headerlink" href="#decode算法" title="Permanent link">&para;</a></h3>
-<p>现在我们训好了一个LM，可以预测下一个词汇的概率，但我们该怎么用它生成一个句子呢？<strong>在decoder中，该怎么决定每次输出哪个呢？</strong></p>
-<h4 id="greedy-search-贪婪搜索">Greedy Search (贪婪搜索)<a class="headerlink" href="#greedy-search-贪婪搜索" title="Permanent link">&para;</a></h4>
-<p><strong>方法</strong>: 在每个时间步，总是选择概率最高的那个词 (argmax)。</p>
-<p><strong>问题</strong>：太过确定，总会选择高频词，不会选择冷门词汇，并且容易陷入循环。</p>
-<p><strong>和argmax区别</strong>：argmax 是 Greedy Search 在每一步决策时使用的具体<strong>工具</strong>，而 Greedy Search 是使用这个工具来构建完整序列的<strong>策略</strong>。</p>
-<h4 id="random-sampling-纯随机采样">Random Sampling (纯随机采样)<a class="headerlink" href="#random-sampling-纯随机采样" title="Permanent link">&para;</a></h4>
-<p><strong>方法</strong>：如其名，随机选。。</p>
-<p><strong>问题</strong>：全是问题</p>
-<h4 id="top-k-sampling-top-k-采样">Top-K Sampling (Top-K 采样)<a class="headerlink" href="#top-k-sampling-top-k-采样" title="Permanent link">&para;</a></h4>
-<p><strong>方法</strong>: 在每个时间步，只考虑概率最高的 K 个词。将这 K 个词的原始概率（或经过温度调整后的概率）重新归一化，然后从这个缩小的集合中进行采样。</p>
-<p><strong>问题</strong>：K在不同情况下的最优值不一样，但是作为超参数，我们只能让其为固定值。</p>
-<h4 id="top-p-sampling-nucleus-sampling--核心采样">Top-P Sampling (Nucleus Sampling / 核心采样)<a class="headerlink" href="#top-p-sampling-nucleus-sampling--核心采样" title="Permanent link">&para;</a></h4>
-<p><strong>方法</strong>: 选择一个概率阈值 p (例如 p=0.9)。在每个时间步，按概率降序排列词汇，然后选择概率之和刚好大于或等于 p 的最小词汇集合。然后，将这个集合中的词的概率重新归一化，并从中采样。</p>
-<p><strong>问题</strong>: 仍然需要选择合适的 p 值，但通常比选择 K 更鲁棒一些。</p>
-<h4 id="pure-sampling">Pure sampling<a class="headerlink" href="#pure-sampling" title="Permanent link">&para;</a></h4>
-<p><strong>方法</strong>: 选择一个概率阈值 p (例如 p=0.9)。在每个时间步，按概率降序排列词汇，然后选择概率之和刚好大于或等于 p 的最小词汇集合。然后，将这个集合中的词的概率重新归一化，并从中采样。</p>
-<p><strong>问题</strong>: 仍然需要选择合适的 p 值，但通常比选择 K 更鲁棒一些。</p>
-<h4 id="beam-search-decoding">Beam search decoding<a class="headerlink" href="#beam-search-decoding" title="Permanent link">&para;</a></h4>
-<p>每一步，只留k个最可能的项，k=1是就是贪婪算法。
-<img alt="alt text" src="../%E4%BB%8E%E7%BF%BB%E8%AF%91%E5%88%B0Transformer.assets/RNN3.png" style="display: block; margin-left: auto; margin-right: auto;" width="50%" /></p>
-<h4 id="softmax-temperature">Softmax temperature<a class="headerlink" href="#softmax-temperature" title="Permanent link">&para;</a></h4>
-<p>在传统softmax中加入了温度t，将每个概率先除以t，在作为指数进行softmax。</p>
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>p</mi><mi>i</mi></msub><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo><mo>=</mo><mi>s</mi><mi>o</mi><mi>f</mi><mi>t</mi><mi>m</mi><mi>a</mi><mi>x</mi><mo stretchy="false">(</mo><msub><mi>z</mi><mi>i</mi></msub><mrow><mo>/</mo></mrow><mi>T</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><msup><mi>e</mi><mrow><mo stretchy="false">(</mo><mfrac><msub><mi>z</mi><mi>i</mi></msub><mi>T</mi></mfrac><mo stretchy="false">)</mo></mrow></msup><mrow><mi>s</mi><mi>u</mi><mi>m</mi><mo stretchy="false">(</mo><msup><mi>e</mi><mrow><mo stretchy="false">(</mo><mfrac><msub><mi>z</mi><mi>j</mi></msub><mi>T</mi></mfrac><mo stretchy="false">)</mo></mrow></msup><mo stretchy="false">)</mo></mrow></mfrac></math>
+<h2 id="relu">ReLU<a class="headerlink" href="#relu" title="Permanent link">&para;</a></h2>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>R</mi><mi>e</mi><mi>L</mi><mi>U</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>x</mi><msup><mo stretchy="false">)</mo><mo>+</mo></msup><mo>=</mo><mi>m</mi><mi>a</mi><mi>x</mi><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></math>
 
+<p><img alt="alt text" src="../%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0.assets/RELU.png" style="display: block; margin-left: auto; margin-right: auto;" width="60%" /></p>
 <ul>
-<li>T &gt; 1：不同概率彼此之间的差距相对缩小了，低概率选项也有了更高的被采样机会，生成的序列会更加多样化。</li>
-<li>T &lt; 1：模型会更倾向于选择它认为最可能的选项。生成的序列会更加保守、可预测，更接近于模型的“核心”知识。</li>
+<li>Dying ReLU 问题:如果一部分神经元输入为负数，那么输出一直为0，输出为0则无法被反向传播（因为无法求得导），所以这部分神经元就死掉了。</li>
 </ul>
-<p>就像deepseek的api文档里，编程t=0，分析t=1，诗歌创作t=1.5。</p>
-<h3 id="评估">评估<a class="headerlink" href="#评估" title="Permanent link">&para;</a></h3>
-<h4 id="人工评估">人工评估<a class="headerlink" href="#人工评估" title="Permanent link">&para;</a></h4>
-<p>准确全面，但昂贵耗时主观。</p>
-<h4 id="bleu">BLEU<a class="headerlink" href="#bleu" title="Permanent link">&para;</a></h4>
-<p>比较机器翻译输出（Candidate）和一个或多个高质量的人工参考翻译（References）之间n-gram（通常是 1 到 4-gram）的重叠程度。</p>
-<p>计算方法：</p>
+<h2 id="relu-变种">ReLU 变种<a class="headerlink" href="#relu-变种" title="Permanent link">&para;</a></h2>
+<h3 id="leaky-relu">Leaky ReLU<a class="headerlink" href="#leaky-relu" title="Permanent link">&para;</a></h3>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>LeakyReLU</mi><mo data-mjx-texclass="NONE">⁡</mo><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mrow data-mjx-texclass="INNER"><mo data-mjx-texclass="OPEN">{</mo><mtable columnalign="left left" columnspacing="1em" rowspacing="4pt"><mtr><mtd><mi>x</mi><mo>,</mo></mtd><mtd><mtext>&nbsp;if&nbsp;</mtext><mi>x</mi><mo>≥</mo><mn>0</mn></mtd></mtr><mtr><mtd><mtext>&nbsp;negative_slope&nbsp;</mtext><mo>×</mo><mi>x</mi><mo>,</mo></mtd><mtd><mtext>&nbsp;otherwise&nbsp;</mtext></mtd></mtr></mtable><mo data-mjx-texclass="CLOSE" fence="true" stretchy="true" symmetric="true"></mo></mrow></math>
+<p><img alt="LeakyReluPic" src="../%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0.assets/LeakyRELU.png" style="display: block; margin-left: auto; margin-right: auto;" width="60%" /></p>
 <ul>
+<li>解决了Dying ReLU 问题。</li>
+</ul>
+<h3 id="prelu">PReLU<a class="headerlink" href="#prelu" title="Permanent link">&para;</a></h3>
+<p>Leaky RelU的小于零部分的斜率可以学习。</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mrow data-mjx-texclass="INNER"><mo data-mjx-texclass="OPEN">{</mo><mtable columnalign="left left" columnspacing="1em" rowspacing=".2em"><mtr><mtd><mi>x</mi></mtd><mtd><mtext>if&nbsp;</mtext><mi>x</mi><mo>&gt;</mo><mn>0</mn></mtd></mtr><mtr><mtd><msub><mi>α</mi><mi>i</mi></msub><mi>x</mi></mtd><mtd><mtext>if&nbsp;</mtext><mi>x</mi><mo>≤</mo><mn>0</mn></mtd></mtr></mtable><mo data-mjx-texclass="CLOSE" fence="true" stretchy="true" symmetric="true"></mo></mrow></math>
+
+<h3 id="elu">ELU<a class="headerlink" href="#elu" title="Permanent link">&para;</a></h3>
+<ul>
+<li>输出均值接近0，且对噪音稳定。</li>
+<li>但是计算比较慢，有超参数。</li>
+</ul>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mrow data-mjx-texclass="INNER"><mo data-mjx-texclass="OPEN">{</mo><mtable columnalign="left left" columnspacing="1em" rowspacing=".2em"><mtr><mtd><mi>x</mi></mtd><mtd><mtext>if&nbsp;</mtext><mi>x</mi><mo>&gt;</mo><mn>0</mn></mtd></mtr><mtr><mtd><mi>α</mi><mo stretchy="false">(</mo><mi>exp</mi><mo data-mjx-texclass="NONE">⁡</mo><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mtd><mtd><mtext>if&nbsp;</mtext><mi>x</mi><mo>≤</mo><mn>0</mn></mtd></mtr></mtable><mo data-mjx-texclass="CLOSE" fence="true" stretchy="true" symmetric="true"></mo></mrow></math>
+<p><img alt="alt text" src="../%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0.assets/ELU.png" style="display: block; margin-left: auto; margin-right: auto;" width="60%" /></p>
+<h3 id="selu">SELU<a class="headerlink" href="#selu" title="Permanent link">&para;</a></h3>
+<p>在特定条件下，实现自归一化。避免梯度消失/爆炸，可以训练非常深的网络。</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>λ</mi><mrow data-mjx-texclass="INNER"><mo data-mjx-texclass="OPEN">{</mo><mtable columnalign="left left" columnspacing="1em" rowspacing=".2em"><mtr><mtd><mi>x</mi></mtd><mtd><mtext>if&nbsp;</mtext><mi>x</mi><mo>&gt;</mo><mn>0</mn></mtd></mtr><mtr><mtd><mi>α</mi><mo stretchy="false">(</mo><mi>exp</mi><mo data-mjx-texclass="NONE">⁡</mo><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mtd><mtd><mtext>if&nbsp;</mtext><mi>x</mi><mo>≤</mo><mn>0</mn></mtd></mtr></mtable><mo data-mjx-texclass="CLOSE" fence="true" stretchy="true" symmetric="true"></mo></mrow></math>
+<p><img alt="alt text" src="../%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0.assets/SELU.png" style="display: block; margin-left: auto; margin-right: auto;" width="60%" /></p>
+<h3 id="silu">SiLU<a class="headerlink" href="#silu" title="Permanent link">&para;</a></h3>
+<p>即x乘上一个sigmoid函数。</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>x</mi><mo>⋅</mo><mi>σ</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mi>x</mi><mrow><mn>1</mn><mo>+</mo><mi>exp</mi><mo data-mjx-texclass="NONE">⁡</mo><mo stretchy="false">(</mo><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mfrac></math>
+<p><img alt="alt text" src="../%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0.assets/SiLU.png" style="display: block; margin-left: auto; margin-right: auto;" width="60%" /></p>
+<h3 id="gelu">GELU<a class="headerlink" href="#gelu" title="Permanent link">&para;</a></h3>
+<p>关键在于高斯分布的累积分布函数（CDF）。利用<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mi>G</mi><mi>E</mi><mi>L</mi><mi>U</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>x</mi><mo>∗</mo><mrow><mo>Φ</mo></mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></math>
+<img alt="alt text" src="../%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0.assets/GELU.png" style="display: block; margin-left: auto; margin-right: auto;" width="60%" /></p>
+<h2 id="sigmoid">Sigmoid<a class="headerlink" href="#sigmoid" title="Permanent link">&para;</a></h2>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>σ</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup></mrow></mfrac></math>
+
+<p><img alt="SigmoidPic" src="../%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0.assets/Sigmoid.png" style="display: block; margin-left: auto; margin-right: auto;" width="60%" /></p>
+<ul>
+<li>当使用Sigmoid激活函数时，反向传播过程中会出现"梯度消失"。Sigmoid函数在输入值较大或较小时，<strong>其导数接近于0</strong>。当我们计算误差从输出层向输入层传播时，每经过一层都要乘以该层激活函数的导数。如果网络层数很多，这些小于1的导数值会不断相乘，导致最终传递到前面层的梯度变得极小，几乎为零。<strong>这使得它们的权重几乎不会更新，网络前面的层几乎无法学习。</strong></li>
 <li>
-<p>计算各阶 n-gram 精度 (Precision): 对于 n=1, 2, 3, 4，计算候选译文中 n-gram 出现在 任一 参考译文中的比例。</p>
-</li>
-<li>
-<p>修正精度 (Modified Precision): 为了防止某个词重复出现过多而获得不合理的高分，一个候选 n-gram 的计数不能超过它在 任何单个 参考译文中出现的最大次数（Clipped Count）。</p>
-</li>
-<li>
-<p>短句惩罚 (Brevity Penalty, BP): 如果Candidate译文比Ref译文短很多，即使精度很高，也可能遗漏了信息。BP 会惩罚过短的句子。BP &lt;= 1，当候选译文长度接近或超过最短参考译文长度时，BP=1。</p>
-</li>
-<li>
-<p>最终得分: BLEU = BP * geometric_mean(p1, p2, p3, p4)</p>
-</li>
-</ul>
-<p>但是,在句子级别 (Sentence Level) 相关性差，且不关心语义，语法。</p>
-<h4 id="meteor">METEOR<a class="headerlink" href="#meteor" title="Permanent link">&para;</a></h4>
-<p>类似BLEU，但是：</p>
-<ul>
-<li>考虑同义词和词干：比 BLEU 更懂语义。</li>
-<li>考虑词序 (通过碎片惩罚): 对语序不佳的翻译会扣分。</li>
-</ul>
-<h4 id="perplexity-ppl">Perplexity (PPL)<a class="headerlink" href="#perplexity-ppl" title="Permanent link">&para;</a></h4>
-<p>衡量一个语言模型对一段给定文本的预测能力。PPL 越低，表示 LM 认为这段文本出现的概率越高，也就是越符合该 LM 所学习到的语言模式。</p>
-<h2 id="statistic-machine-translation">Statistic Machine Translation<a class="headerlink" href="#statistic-machine-translation" title="Permanent link">&para;</a></h2>
-<p>统计机器翻译（SMT）：最初是算词库中，所有词哪个概率最大；或者对于一句话，另一个语言中哪个句子概率最大</p>
-<p><code>ê = argmax_e P(e|f)</code></p>
-<ul>
-<li><code>ê</code> 是我们找到的最佳翻译结果。</li>
-<li><code>argmax_e</code> 表示在所有可能的目标语言句子 <em>e</em> 中寻找。</li>
-<li><code>P(e|f)</code> 是“给定源语言句子 <em>f</em>，目标语言句子 <em>e</em> 是其正确翻译的概率”。然而它很难精确求解。</li>
-</ul>
-<p>​   这时用到贝叶斯公式：<code>P(e|f) = [ P(f|e) * P(e) ] / P(f)</code>，<code>P(f)</code>是常数，因为翻译的句子已经给出，此时之前的公式变成</p>
-<p>​                           <code>ê = argmax_e P(f|e) * P(e)</code>。</p>
-<p>​   <strong>此公式是SMT的基石</strong>。它将翻译问题分解成了两个部分：</p>
-<ul>
-<li><strong>翻译模型 (Translation Model) - <code>P(f|e)</code></strong>：</li>
-</ul>
-<p>​   给定一个目标语言句子 <em>e</em>，它对应回源语言句子 <em>f</em> 的概率是多少？</p>
-<p>​   通过Alignment，词对齐，或者短语对齐来求。</p>
-<p><img alt="image-20250411143709701" src="../%E4%BB%8E%E7%BF%BB%E8%AF%91%E5%88%B0Transformer.assets/SMT1.png" style="display: block; margin-left: auto; margin-right: auto;" width="80%" /></p>
-<ul>
-<li>
-<p><strong>语言模型 (Language Model) - <code>P(e)</code></strong>:</p>
-<p>目标语言句子 <em>e</em> 本身有多么<strong>流利 (Fluency)</strong> 和自然？一个语法正确、符合目标语言表达习惯的句子，其概率 <code>P(e)</code> 会更高。</p>
-<p>通过<strong>N-gram</strong>计算, 它假设一个词出现的概率主要取决于它前面紧邻的 N-1 个词。</p>
-<ul>
-<li>计算: 整个句子 <em>e</em> 的概率 <code>P(e)</code> 通过链式法则近似计算为各个 N-gram 概率的乘积。例如，<code>P(w₁, w₂, ..., wₙ) ≈ P(w₁) * P(w₂|w₁) * P(w₃|w₁, w₂) * ... * P(wₙ|wₙ₋₁, wₙ₋₂)</code>.</li>
-</ul>
-<p><strong>训练</strong>: 语言模型通过分析大量的<strong>单语语料库</strong>（只需要目标语言的文本）来学习词语序列的出现频率，从而估计 N-gram 概率。</p>
+<p>此外，函数不是以零为中心的，这会导致训练过程中的<strong>收敛速度较慢</strong>。由于上一层sigmoid出来都是正数，所以在反向传播时，权重只能同加同减。</p>
+<p>假设当前权重是 <code>(w1, w2) = (1, 1)</code>。而理想的最优权重是<code>(w1_opt, w2_opt) = (3, -1)</code>。且梯度更新规则不允许在一个步骤中同时增大 <code>w1</code>和减小<code>w2</code>，所以迭代次数需要很多次。</p>
 </li>
 </ul>
-<p>最后，还要接上一个解码器，它是一个搜索算法，它的任务是在巨大的可能翻译空间中，找到那个能够最大化 <code>P(f|e) * P(e)</code> 乘积的目标句子 <em>e</em>。</p>
-<ol>
-<li>Neural Network</li>
-</ol>
-<p>进入attention了</p>
-<p>Q是把输入转化成我们关心的方面的信息，如是词性？</p>
-<p>解码并行不了，所以很多都只有encoder</p>
+<h2 id="tanh">tanh<a class="headerlink" href="#tanh" title="Permanent link">&para;</a></h2>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>tanh</mi><mo data-mjx-texclass="NONE">⁡</mo><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>−</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup></mrow><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>+</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup></mrow></mfrac></math>
+<p><img alt="alt text" src="../%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0.assets/tanh.png" style="display: block; margin-left: auto; margin-right: auto;" width="60%" /></p>
+<ul>
+<li>与Sigmoid相比，它是以零为中心，所以可以<strong>加快收敛速度</strong>。</li>
+<li>能稍稍缓解梯度消失，<strong>但是消除不了</strong>。</li>
+</ul>
+<h2 id="softmax">Softmax<a class="headerlink" href="#softmax" title="Permanent link">&para;</a></h2>
+<p>非线性，但是所有概率都在0，1之间，且总和为1。</p>
+<ul>
+<li>多类别分类问题：作为神经网络的最后一层，将原始得分转换为各类别的概率分布</li>
+<li>注意力机制：在注意力计算中，用于将相关性分数转换为权重</li>
+</ul>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtext>Softmax</mtext><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mi>exp</mi><mo data-mjx-texclass="NONE">⁡</mo><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><munder><mo data-mjx-texclass="OP">∑</mo><mi>j</mi></munder><mi>exp</mi><mo data-mjx-texclass="NONE">⁡</mo><mo stretchy="false">(</mo><msub><mi>x</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow></mfrac></math>
+
+<h3 id="softmin">Softmin<a class="headerlink" href="#softmin" title="Permanent link">&para;</a></h3>
+<p>距离或成本最小化：当需要基于距离或成本进行软选择时，Softmin 可以赋予较小值更高的权重</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtext>Softmax</mtext><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mi>exp</mi><mo data-mjx-texclass="NONE">⁡</mo><mo stretchy="false">(</mo><msub><mi>-x</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><munder><mo data-mjx-texclass="OP">∑</mo><mi>j</mi></munder><mi>exp</mi><mo data-mjx-texclass="NONE">⁡</mo><mo stretchy="false">(</mo><msub><mi>-x</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow></mfrac></math>
+
+<h3 id="logsoftmax">LogSoftmax<a class="headerlink" href="#logsoftmax" title="Permanent link">&para;</a></h3>
+<p>在反向传播时，<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mtext>LogSoftmax</mtext></math>往往更加稳定。</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtext>LogSoftmax</mtext><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo><mo>=</mo><mi>l</mi><mi>o</mi><mi>g</mi><mo stretchy="false">(</mo><mfrac><mrow><mi>exp</mi><mo data-mjx-texclass="NONE">⁡</mo><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><munder><mo data-mjx-texclass="OP">∑</mo><mi>j</mi></munder><mi>exp</mi><mo data-mjx-texclass="NONE">⁡</mo><mo stretchy="false">(</mo><msub><mi>x</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow></mfrac><mo stretchy="false">)</mo></math>
 
 
 
