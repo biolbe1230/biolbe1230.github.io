@@ -1,6 +1,28 @@
+<!--
+  Copyright (c) 2016-2025 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="zh" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -8,7 +30,7 @@
       
       
       
-        <link rel="canonical" href="https://mydomain.org/mysite/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/Nerual_Network/2%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/">
+        <link rel="canonical" href="http://biolbe1230.github.io/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/Nerual_Network/2%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/">
       
       
         <link rel="prev" href="../1%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0/">
@@ -17,16 +39,19 @@
         <link rel="next" href="../3%E5%85%B6%E5%AE%83%E6%9E%B6%E6%9E%84/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../img/fav.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
     
     
       
-        <title>2.安全攻防 - My site</title>
+        <title>2.安全攻防 - 买不到桂花的博客</title>
       
     
     
       <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -40,10 +65,16 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=LXGW+WenKai+Screen+GB+Screen:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"LXGW WenKai Screen GB Screen";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../../_css/extra.css">
+    
+      <link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css">
+    
+      <link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -52,10 +83,22 @@
     
     
     
+
+  <!-- Extra style sheets (can't be set in mkdocs.yml due to content hash) -->
+  <link
+    rel="stylesheet"
+    href="../../../assets/stylesheets/custom.scss"
+  />
+
   </head>
   
   
-    <body dir="ltr">
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="amber">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -64,8 +107,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
-          Skip to content
+        <a href="#总览" class="md-skip">
+          跳转至
         </a>
       
     </div>
@@ -76,14 +119,11 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="My site" class="md-header__button md-logo" aria-label="My site" data-md-component="logo">
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="买不到桂花的博客" class="md-header__button md-logo" aria-label="买不到桂花的博客" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../../img/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -94,7 +134,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            My site
+            买不到桂花的博客
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -107,8 +147,8 @@
       </div>
     </div>
     
+      
     
-      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -120,16 +160,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Search">
+      <nav class="md-search__options" aria-label="查找">
         
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -140,7 +180,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initializing search
+            正在初始化搜索引擎
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -159,6 +199,134 @@
       
         
           
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  欢迎页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../Agent/" class="md-tabs__link">
+          
+  
+    
+  
+  人工智能
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/LeVERB/" class="md-tabs__link">
+          
+  
+    
+  
+  具身智能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E7%94%B5%E5%AD%90%E8%8D%92%E5%8E%9F/Norco/" class="md-tabs__link">
+          
+  
+    
+  
+  电子荒原
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E8%BF%B7%E5%A4%B1%E7%8E%89%E8%A8%80/Git_basic/" class="md-tabs__link">
+          
+  
+    
+  
+  迷失玉言
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -172,16 +340,17 @@
                     
 
 
-
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="My site" class="md-nav__button md-logo" aria-label="My site" data-md-component="logo">
-      
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="买不到桂花的博客" class="md-nav__button md-logo" aria-label="买不到桂花的博客" data-md-component="logo">
+      
+  <img src="../../../img/logo.png" alt="logo">
 
     </a>
-    My site
+    买不到桂花的博客
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -217,16 +386,34 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -253,17 +440,39 @@
   
     
     
+      
+        
+          
+        
+      
+        
+      
+        
+      
     
     
-    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1" >
         
           
-          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Agent/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Agent
@@ -271,8 +480,14 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_1">
@@ -281,26 +496,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Agent/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Agent学习
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -363,17 +558,37 @@
   
     
     
+      
+        
+          
+        
+      
+        
+      
     
     
-    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
         
           
-          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../LLM/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     LLM
@@ -381,8 +596,14 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_2">
@@ -391,26 +612,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../LLM/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    LLM学习
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -453,17 +654,45 @@
   
     
     
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Nerual Network
@@ -471,8 +700,14 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_3">
@@ -481,26 +716,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    神经网络
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -564,19 +779,19 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="目录">
   
   
   
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      目录
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#总览" class="md-nav__link">
     <span class="md-ellipsis">
       总览
     </span>
@@ -585,7 +800,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#攻击分类" class="md-nav__link">
     <span class="md-ellipsis">
       攻击分类
     </span>
@@ -595,7 +810,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#威胁模型四分法" class="md-nav__link">
     <span class="md-ellipsis">
       威胁模型四分法
     </span>
@@ -604,7 +819,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#扰动的三个维度" class="md-nav__link">
     <span class="md-ellipsis">
       扰动的三个维度
     </span>
@@ -613,7 +828,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#benchmark" class="md-nav__link">
+  <a href="#benchmark的两个维度" class="md-nav__link">
     <span class="md-ellipsis">
       Benchmark的两个维度
     </span>
@@ -627,7 +842,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#对抗样本生成" class="md-nav__link">
     <span class="md-ellipsis">
       对抗样本生成
     </span>
@@ -637,7 +852,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#白盒攻击" class="md-nav__link">
     <span class="md-ellipsis">
       白盒攻击
     </span>
@@ -701,7 +916,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#7" class="md-nav__link">
+  <a href="#7-通用对抗扰动" class="md-nav__link">
     <span class="md-ellipsis">
       7. 通用对抗扰动
     </span>
@@ -710,7 +925,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#8" class="md-nav__link">
+  <a href="#8-特征对抗" class="md-nav__link">
     <span class="md-ellipsis">
       8. 特征对抗
     </span>
@@ -724,7 +939,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#黑盒攻击" class="md-nav__link">
     <span class="md-ellipsis">
       黑盒攻击
     </span>
@@ -734,7 +949,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#9" class="md-nav__link">
+  <a href="#9-基于迁移性的攻击" class="md-nav__link">
     <span class="md-ellipsis">
       9. 基于迁移性的攻击
     </span>
@@ -743,7 +958,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#10" class="md-nav__link">
+  <a href="#10-替代模型训练" class="md-nav__link">
     <span class="md-ellipsis">
       10. 替代模型训练
     </span>
@@ -761,7 +976,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#12" class="md-nav__link">
+  <a href="#12-边界攻击" class="md-nav__link">
     <span class="md-ellipsis">
       12. 边界攻击
     </span>
@@ -770,7 +985,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#13" class="md-nav__link">
+  <a href="#13-单像素攻击" class="md-nav__link">
     <span class="md-ellipsis">
       13. 单像素攻击
     </span>
@@ -779,7 +994,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#14" class="md-nav__link">
+  <a href="#14-热冷方法" class="md-nav__link">
     <span class="md-ellipsis">
       14. 热/冷方法
     </span>
@@ -788,7 +1003,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#15" class="md-nav__link">
+  <a href="#15-自然生成对抗网络" class="md-nav__link">
     <span class="md-ellipsis">
       15. 自然生成对抗网络
     </span>
@@ -797,7 +1012,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#16" class="md-nav__link">
+  <a href="#16-基于模型的集成攻击" class="md-nav__link">
     <span class="md-ellipsis">
       16. 基于模型的集成攻击
     </span>
@@ -806,7 +1021,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#17" class="md-nav__link">
+  <a href="#17-基准真相攻击" class="md-nav__link">
     <span class="md-ellipsis">
       17. 基准真相攻击
     </span>
@@ -825,7 +1040,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#对抗样本应用" class="md-nav__link">
     <span class="md-ellipsis">
       对抗样本应用
     </span>
@@ -835,7 +1050,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
+  <a href="#强化学习" class="md-nav__link">
     <span class="md-ellipsis">
       强化学习
     </span>
@@ -844,7 +1059,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
+  <a href="#生成模型" class="md-nav__link">
     <span class="md-ellipsis">
       生成模型
     </span>
@@ -853,7 +1068,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
+  <a href="#人脸识别" class="md-nav__link">
     <span class="md-ellipsis">
       人脸识别
     </span>
@@ -862,7 +1077,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
+  <a href="#语义分割" class="md-nav__link">
     <span class="md-ellipsis">
       语义分割
     </span>
@@ -885,7 +1100,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_13" class="md-nav__link">
+  <a href="#防御手段" class="md-nav__link">
     <span class="md-ellipsis">
       防御手段
     </span>
@@ -895,7 +1110,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_14" class="md-nav__link">
+  <a href="#网络蒸馏" class="md-nav__link">
     <span class="md-ellipsis">
       网络蒸馏
     </span>
@@ -904,7 +1119,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_15" class="md-nav__link">
+  <a href="#对抗训练" class="md-nav__link">
     <span class="md-ellipsis">
       对抗训练
     </span>
@@ -913,7 +1128,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_16" class="md-nav__link">
+  <a href="#对抗检测" class="md-nav__link">
     <span class="md-ellipsis">
       对抗检测
     </span>
@@ -922,7 +1137,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_17" class="md-nav__link">
+  <a href="#输入重建" class="md-nav__link">
     <span class="md-ellipsis">
       输入重建
     </span>
@@ -931,7 +1146,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_18" class="md-nav__link">
+  <a href="#分类器鲁棒化" class="md-nav__link">
     <span class="md-ellipsis">
       分类器鲁棒化
     </span>
@@ -940,7 +1155,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_19" class="md-nav__link">
+  <a href="#网络验证" class="md-nav__link">
     <span class="md-ellipsis">
       网络验证
     </span>
@@ -949,7 +1164,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_20" class="md-nav__link">
+  <a href="#问题与挑战" class="md-nav__link">
     <span class="md-ellipsis">
       问题与挑战
     </span>
@@ -959,7 +1174,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_21" class="md-nav__link">
+  <a href="#迁移性" class="md-nav__link">
     <span class="md-ellipsis">
       迁移性
     </span>
@@ -968,7 +1183,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_22" class="md-nav__link">
+  <a href="#存在性" class="md-nav__link">
     <span class="md-ellipsis">
       存在性
     </span>
@@ -977,7 +1192,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_23" class="md-nav__link">
+  <a href="#鲁棒性评估" class="md-nav__link">
     <span class="md-ellipsis">
       鲁棒性评估
     </span>
@@ -1108,16 +1323,32 @@
   
     
     
+      
+        
+      
+        
+      
     
     
-    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
         
           
-          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1203,13 +1434,24 @@
   
     
     
+      
+        
+      
+    
+    
+      
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -1268,13 +1510,24 @@
   
     
     
+      
+        
+      
+    
+    
+      
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -1304,17 +1557,36 @@
   
     
     
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_1" >
         
           
-          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../%E7%94%B5%E5%AD%90%E8%8D%92%E5%8E%9F/Norco/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Norco
@@ -1322,8 +1594,14 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_1">
@@ -1332,26 +1610,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../%E7%94%B5%E5%AD%90%E8%8D%92%E5%8E%9F/Norco/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Norco playblog
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -1421,13 +1679,26 @@
   
     
     
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -1513,19 +1784,19 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="目录">
   
   
   
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      目录
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#总览" class="md-nav__link">
     <span class="md-ellipsis">
       总览
     </span>
@@ -1534,7 +1805,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#攻击分类" class="md-nav__link">
     <span class="md-ellipsis">
       攻击分类
     </span>
@@ -1544,7 +1815,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#威胁模型四分法" class="md-nav__link">
     <span class="md-ellipsis">
       威胁模型四分法
     </span>
@@ -1553,7 +1824,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#扰动的三个维度" class="md-nav__link">
     <span class="md-ellipsis">
       扰动的三个维度
     </span>
@@ -1562,7 +1833,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#benchmark" class="md-nav__link">
+  <a href="#benchmark的两个维度" class="md-nav__link">
     <span class="md-ellipsis">
       Benchmark的两个维度
     </span>
@@ -1576,7 +1847,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#对抗样本生成" class="md-nav__link">
     <span class="md-ellipsis">
       对抗样本生成
     </span>
@@ -1586,7 +1857,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#白盒攻击" class="md-nav__link">
     <span class="md-ellipsis">
       白盒攻击
     </span>
@@ -1650,7 +1921,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#7" class="md-nav__link">
+  <a href="#7-通用对抗扰动" class="md-nav__link">
     <span class="md-ellipsis">
       7. 通用对抗扰动
     </span>
@@ -1659,7 +1930,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#8" class="md-nav__link">
+  <a href="#8-特征对抗" class="md-nav__link">
     <span class="md-ellipsis">
       8. 特征对抗
     </span>
@@ -1673,7 +1944,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#黑盒攻击" class="md-nav__link">
     <span class="md-ellipsis">
       黑盒攻击
     </span>
@@ -1683,7 +1954,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#9" class="md-nav__link">
+  <a href="#9-基于迁移性的攻击" class="md-nav__link">
     <span class="md-ellipsis">
       9. 基于迁移性的攻击
     </span>
@@ -1692,7 +1963,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#10" class="md-nav__link">
+  <a href="#10-替代模型训练" class="md-nav__link">
     <span class="md-ellipsis">
       10. 替代模型训练
     </span>
@@ -1710,7 +1981,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#12" class="md-nav__link">
+  <a href="#12-边界攻击" class="md-nav__link">
     <span class="md-ellipsis">
       12. 边界攻击
     </span>
@@ -1719,7 +1990,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#13" class="md-nav__link">
+  <a href="#13-单像素攻击" class="md-nav__link">
     <span class="md-ellipsis">
       13. 单像素攻击
     </span>
@@ -1728,7 +1999,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#14" class="md-nav__link">
+  <a href="#14-热冷方法" class="md-nav__link">
     <span class="md-ellipsis">
       14. 热/冷方法
     </span>
@@ -1737,7 +2008,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#15" class="md-nav__link">
+  <a href="#15-自然生成对抗网络" class="md-nav__link">
     <span class="md-ellipsis">
       15. 自然生成对抗网络
     </span>
@@ -1746,7 +2017,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#16" class="md-nav__link">
+  <a href="#16-基于模型的集成攻击" class="md-nav__link">
     <span class="md-ellipsis">
       16. 基于模型的集成攻击
     </span>
@@ -1755,7 +2026,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#17" class="md-nav__link">
+  <a href="#17-基准真相攻击" class="md-nav__link">
     <span class="md-ellipsis">
       17. 基准真相攻击
     </span>
@@ -1774,7 +2045,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#对抗样本应用" class="md-nav__link">
     <span class="md-ellipsis">
       对抗样本应用
     </span>
@@ -1784,7 +2055,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
+  <a href="#强化学习" class="md-nav__link">
     <span class="md-ellipsis">
       强化学习
     </span>
@@ -1793,7 +2064,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
+  <a href="#生成模型" class="md-nav__link">
     <span class="md-ellipsis">
       生成模型
     </span>
@@ -1802,7 +2073,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
+  <a href="#人脸识别" class="md-nav__link">
     <span class="md-ellipsis">
       人脸识别
     </span>
@@ -1811,7 +2082,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
+  <a href="#语义分割" class="md-nav__link">
     <span class="md-ellipsis">
       语义分割
     </span>
@@ -1834,7 +2105,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_13" class="md-nav__link">
+  <a href="#防御手段" class="md-nav__link">
     <span class="md-ellipsis">
       防御手段
     </span>
@@ -1844,7 +2115,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_14" class="md-nav__link">
+  <a href="#网络蒸馏" class="md-nav__link">
     <span class="md-ellipsis">
       网络蒸馏
     </span>
@@ -1853,7 +2124,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_15" class="md-nav__link">
+  <a href="#对抗训练" class="md-nav__link">
     <span class="md-ellipsis">
       对抗训练
     </span>
@@ -1862,7 +2133,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_16" class="md-nav__link">
+  <a href="#对抗检测" class="md-nav__link">
     <span class="md-ellipsis">
       对抗检测
     </span>
@@ -1871,7 +2142,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_17" class="md-nav__link">
+  <a href="#输入重建" class="md-nav__link">
     <span class="md-ellipsis">
       输入重建
     </span>
@@ -1880,7 +2151,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_18" class="md-nav__link">
+  <a href="#分类器鲁棒化" class="md-nav__link">
     <span class="md-ellipsis">
       分类器鲁棒化
     </span>
@@ -1889,7 +2160,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_19" class="md-nav__link">
+  <a href="#网络验证" class="md-nav__link">
     <span class="md-ellipsis">
       网络验证
     </span>
@@ -1898,7 +2169,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_20" class="md-nav__link">
+  <a href="#问题与挑战" class="md-nav__link">
     <span class="md-ellipsis">
       问题与挑战
     </span>
@@ -1908,7 +2179,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_21" class="md-nav__link">
+  <a href="#迁移性" class="md-nav__link">
     <span class="md-ellipsis">
       迁移性
     </span>
@@ -1917,7 +2188,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_22" class="md-nav__link">
+  <a href="#存在性" class="md-nav__link">
     <span class="md-ellipsis">
       存在性
     </span>
@@ -1926,7 +2197,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_23" class="md-nav__link">
+  <a href="#鲁棒性评估" class="md-nav__link">
     <span class="md-ellipsis">
       鲁棒性评估
     </span>
@@ -1958,9 +2229,31 @@
                 
                   
 
+  <nav class="md-tags" >
+    
+      
+      
+      
+        <span class="md-tag">AI</span>
+      
+    
+      
+      
+      
+        <span class="md-tag">LLM</span>
+      
+    
+      
+      
+      
+        <span class="md-tag">Safety</span>
+      
+    
+  </nav>
 
 
-<h2 id="_1">总览</h2>
+
+<h2 id="总览">总览<a class="headerlink" href="#总览" title="Permanent link">&para;</a></h2>
 <p>因为这篇<a href="https://arxiv.org/pdf/1712.07107">文章</a>是综述类的，所以我打算原原本本地按它的结构进行呈现总结。本文全面回顾了截至 2017 年底深度学习中对抗样本的研究现状，涵盖了攻击方法、分类、应用和防御对策，并重点分析讨论了该领域面临的核心挑战与潜在解决方向，旨在为后续研究提供参考。对于每个方面，作者会罗列多条并列的方法，比如对抗样本生成的十几种方法，因此我也很难以更简略的方式写这个阅读报告，只好将其一一列出，总结其要点。</p>
 <p>对抗样本不仅是威胁，研究它们也有助于理解深度学习模型的内部工作机制，发现模型决策边界的问题，从而提高模型的鲁棒性和性能，并改善其可解释性。</p>
 <p>本篇文章只讨论<strong>在测试/部署阶段进行攻击</strong>的情况，不包含训练投毒的话题；专注讨论<strong>针对深度神经网络构建的模型的攻击</strong>，这些攻击对于传统模型（SVM，随机森林）仍然有效；<strong>攻击者仅旨在破坏完整性</strong>（由性能分数量化），暂不讨论隐私机密泄露等问题。</p>
@@ -1970,7 +2263,7 @@
 <li><strong>方法调研与比较:</strong> 作者调研了近期的对抗样本生成方法及其变种，并使用提出的分类体系进行比较。同时，展示了对抗样本在多个应用领域（如强化学习、生成模型、人脸识别、物体检测、语义分割、自然语言处理、恶意软件检测）的实例，并讨论了相应的防御对策。</li>
 <li><strong>挑战与未来方向 :</strong> 作者基于三个核心问题（对抗样本的迁移性、对抗样本的存在性、深度神经网络的鲁棒性评估）概述了该领域面临的主要挑战和潜在的未来研究方向。</li>
 </ul>
-<h2 id="_2">攻击分类</h2>
+<h2 id="攻击分类">攻击分类<a class="headerlink" href="#攻击分类" title="Permanent link">&para;</a></h2>
 <p>作者提出一套 <strong>分类学（taxonomy）</strong>，用三条主轴来整理纷繁的攻击方法：</p>
 <ol>
 <li>
@@ -1986,7 +2279,7 @@
 <p>数据集（MNIST、CIFAR‑10、ImageNet…）与受害模型（LeNet、ResNet…），用来衡量攻击/防御强弱和可比性。</p>
 </li>
 </ol>
-<h3 id="_3"><strong>威胁模型四分法</strong></h3>
+<h3 id="威胁模型四分法"><strong>威胁模型四分法</strong><a class="headerlink" href="#威胁模型四分法" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p><strong>Adversarial Falsification（对抗型误判）</strong></p>
@@ -2009,7 +2302,7 @@
 <p><strong>多次迭代（Iterative）</strong>：如 BIM、C&amp;W，扰动更小但计算量大。</p>
 </li>
 </ol>
-<h3 id="_4">扰动的三个维度</h3>
+<h3 id="扰动的三个维度">扰动的三个维度<a class="headerlink" href="#扰动的三个维度" title="Permanent link">&para;</a></h3>
 <ol>
 <li><strong>Scope（作用范围）</strong>：单样本 vs. 通用；</li>
 <li><strong>Limitation（约束方式）</strong>：把扰动当目标最小化 （追求最优）or 设定硬阈值（效率较高）；</li>
@@ -2028,7 +2321,7 @@
 </ol>
 </li>
 </ol>
-<h3 id="benchmark">Benchmark的两个维度</h3>
+<h3 id="benchmark的两个维度">Benchmark的两个维度<a class="headerlink" href="#benchmark的两个维度" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p>按<strong>数据集</strong> 还是 <strong>受害模型</strong> 来评估攻击样本效果；</p>
@@ -2040,68 +2333,68 @@
 <p>受害模型：攻击应在多种网络（LeNet, AlexNet, VGG, ResNet…）上验证，以排除“仅对某一体系有效”的情况。</p>
 </li>
 </ol>
-<h2 id="_5">对抗样本生成</h2>
+<h2 id="对抗样本生成">对抗样本生成<a class="headerlink" href="#对抗样本生成" title="Permanent link">&para;</a></h2>
 <p>本章节中，作者讨论图像分类任务中的对抗样本的生成方法，枚举了十几种方法。</p>
-<h3 id="_6">白盒攻击</h3>
+<h3 id="白盒攻击">白盒攻击<a class="headerlink" href="#白盒攻击" title="Permanent link">&para;</a></h3>
 <p>攻击者完全了解模型，包括其架构、参数（权重）、训练数据（可能）、激活函数等。这使得攻击者可以利用模型的梯度等内部信息来精确地生成对抗样本。</p>
-<h4 id="1-lbfgs">1. L‑BFGS</h4>
+<h4 id="1-lbfgs">1. L‑BFGS<a class="headerlink" href="#1-lbfgs" title="Permanent link">&para;</a></h4>
 <p>如下，追求最小扰动。引用超参 c 来平衡扰动和分类损失：过大 c 会优先减少分类损失，但扰动可能很大；过小 c 又不能保证成功误分类。这是一个<strong>白盒</strong>攻击方法。</p>
-<p><img alt="image-20250409103457786" src="../%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB.assets/image-20250409103457786-1744207834027-3.png" />{ width="70%" style="display: block; margin-left: auto; margin-right: auto;" }</p>
-<h4 id="2fgsm">2.FGSM</h4>
+<p><img alt="image-20250409103457786" src="../%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB.assets/image-20250409103457786-1744207834027-3.png" style="display: block; margin-left: auto; margin-right: auto;" width="70%" /></p>
+<h4 id="2fgsm">2.FGSM<a class="headerlink" href="#2fgsm" title="Permanent link">&para;</a></h4>
 <p>一种追求快速生成对抗样本，的单步攻击方法。计算每个像素在损失函数上的梯度，在梯度的符号方向加一个小常量（<strong>要么是 +ε，要么是 -ε</strong>）。这是一个<strong>白盒</strong>攻击方法。</p>
-<p><img alt="image-20250409113421869" src="../%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB.assets/image-20250409113421869-1744207842006-5.png" />{ width="50%" style="display: block; margin-left: auto; margin-right: auto;" }</p>
+<p><img alt="image-20250409113421869" src="../%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB.assets/image-20250409113421869-1744207842006-5.png" style="display: block; margin-left: auto; margin-right: auto;" width="50%" /></p>
 <p>同时可以修改为targeted版本，即让模型将对抗样本识别为指定的类<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msup><mi>l</mi><mrow><mo>′</mo></mrow></msup></math>, 只需要<strong>降低</strong>模型在类<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msup><mi>l</mi><mrow><mo>′</mo></mrow></msup></math>上识别的损失函数。</p>
-<p><img alt="image-20250409114412592" src="../%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB.assets/image-20250409114412592-1744207852933-7.png" />{ width="60%" style="display: block; margin-left: auto; margin-right: auto;" }</p>
-<h4 id="3-bim">3. BIM</h4>
+<p><img alt="image-20250409114412592" src="../%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB.assets/image-20250409114412592-1744207852933-7.png" style="display: block; margin-left: auto; margin-right: auto;" width="60%" /></p>
+<h4 id="3-bim">3. BIM<a class="headerlink" href="#3-bim" title="Permanent link">&para;</a></h4>
 <p>和FGSM类似，不过每次迭代只移动一小步，即把 FGSM 的一大步 <code>ε</code>拆成 <strong>多小步 <code>α</code></strong>。</p>
 <p>通常比FGSM攻击成功率更高，并且首次证明了对抗样本可以在物理世界生效。</p>
-<h4 id="4jsma">4.<strong>JSMA</strong></h4>
+<h4 id="4jsma">4.<strong>JSMA</strong><a class="headerlink" href="#4jsma" title="Permanent link">&para;</a></h4>
 <p>基于雅可比矩阵的显著图攻击，其目标是<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>ℓ</mi><mi>0</mi></msub></math>范数，即尽可能修改较少的像素。基于雅可比矩阵构建显著图，以指示输入特征对分类结果的重要性，从而修改重要性分数最高的像素。</p>
 <p>通常较为有效，但是成本较高。</p>
-<h4 id="5-deepfool">5. DeepFool</h4>
+<h4 id="5-deepfool">5. DeepFool<a class="headerlink" href="#5-deepfool" title="Permanent link">&para;</a></h4>
 <p>寻找将样本推过分类决策边界所需的<strong>最小扰动</strong>（主要关注<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>ℓ</mi><mi>2</mi></msub></math> 范数）。 <strong>特点:</strong> 迭代地逼近最近的决策边界，假设局部线性。计算效率相对较高，能找到较小的 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>ℓ</mi><mi>2</mi></msub></math>扰动。</p>
-<h4 id="6-cw">6. C&amp;W</h4>
+<h4 id="6-cw">6. C&amp;W<a class="headerlink" href="#6-cw" title="Permanent link">&para;</a></h4>
 <p><strong>基于优化的攻击</strong>（支持<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>ℓ</mi><mi>0</mi></msub></math>，<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>ℓ</mi><mi>2</mi></msub></math>，<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>ℓ</mi><mi>∞</mi></msub></math>）。使用特制的间隔损失和变量替换技巧  来生成高质量对抗样本。 </p>
 <p>攻击效果非常强，常作为评估防御方法的基准。计算成本高。</p>
-<h4 id="7">7. 通用对抗扰动</h4>
+<h4 id="7-通用对抗扰动">7. 通用对抗扰动<a class="headerlink" href="#7-通用对抗扰动" title="Permanent link">&para;</a></h4>
 <p><strong>核心思想:</strong> 找到一个<strong>单一的、固定的扰动向量 <code>v</code></strong>，将其添加到<strong>大部分</strong>不同的干净图像 <code>x</code> 上后，都能导致模型 <code>f</code> 对 <code>x+v</code> 产生误分类。这个扰动是“通用的”。</p>
 <p>生成成本较高；跨模型泛化性好。</p>
-<h4 id="8">8. 特征对抗</h4>
+<h4 id="8-特征对抗">8. 特征对抗<a class="headerlink" href="#8-特征对抗" title="Permanent link">&para;</a></h4>
 <p>不直接攻击模型的最终输出层，而是通过修改输入，使其在模型的<strong>某个中间层（特征层）</strong>的表示 接近（或远离）目标（或原始）图像在该层的表示。其中<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>ϕ</mi><mi>k</mi></msub></math>是第k层神经网络的输出</p>
-<p><img alt="image-20250409120758436" src="../%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB.assets/image-20250409120758436-1744207822187-1.png" />{ width="50%" style="display: block; margin-left: auto; margin-right: auto;" }</p>
+<p><img alt="image-20250409120758436" src="../%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB.assets/image-20250409120758436-1744207822187-1.png" style="display: block; margin-left: auto; margin-right: auto;" width="50%" /></p>
 <p>生成的对抗样本可能在视觉上更“自然”或更接近目标类别的高级特征。</p>
-<h3 id="_7">黑盒攻击</h3>
+<h3 id="黑盒攻击">黑盒攻击<a class="headerlink" href="#黑盒攻击" title="Permanent link">&para;</a></h3>
 <p>攻击者无法访问模型内部信息（结构、参数、梯度）。主要依赖模型的输入输出查询。</p>
-<h4 id="9">9. 基于迁移性的攻击</h4>
+<h4 id="9-基于迁移性的攻击">9. 基于迁移性的攻击<a class="headerlink" href="#9-基于迁移性的攻击" title="Permanent link">&para;</a></h4>
 <p>利用对抗样本的<strong>迁移性</strong>（在一个模型上有效的攻击，可能也对其他模型有效）。攻击者在自己已知或训练的<strong>替代模型 (substitute model)</strong> 上生成对抗样本，然后直接用于攻击目标黑盒模型。</p>
 <p>简单易行，无需查询目标模型（如果已有替代模型）。效果依赖于模型间的迁移性有多强。</p>
-<h4 id="10">10. 替代模型训练</h4>
+<h4 id="10-替代模型训练">10. 替代模型训练<a class="headerlink" href="#10-替代模型训练" title="Permanent link">&para;</a></h4>
 <p>通过<strong>查询</strong>目标黑盒模型来获取数据（输入-输出对），然后用这些数据<strong>训练一个替代模型</strong>来模仿目标模型的行为。之后，在替代模型上使用<strong>白盒攻击</strong>生成对抗样本，并迁移到目标模型上。 </p>
 <p>比单纯基于迁移性的攻击更具针对性，但需要<strong>大量查询</strong>目标模型，成本较高，且可能被检测。</p>
-<h4 id="11-zoo">11. ZOO</h4>
+<h4 id="11-zoo">11. ZOO<a class="headerlink" href="#11-zoo" title="Permanent link">&para;</a></h4>
 <p>在<strong>无法获取梯度</strong>的情况下，通过<strong>有限差分</strong>等方法<strong>估计梯度</strong>。它向输入添加微小扰动，观察输出变化来近似梯度方向。然后将估计出的梯度用于<strong>类似白盒攻击的优化过程</strong>（如 C&amp;W）。 </p>
 <p>将梯度优化攻击（如 C&amp;W）扩展到黑盒场景。需要<strong>极大量的查询</strong>来估计梯度，效率较低。</p>
-<h4 id="12">12. 边界攻击</h4>
+<h4 id="12-边界攻击">12. 边界攻击<a class="headerlink" href="#12-边界攻击" title="Permanent link">&para;</a></h4>
 <p>从一个确定是对抗样本的输入开始，然后<strong>在保持对抗性的前提下（人话就是，还是分类错的），逐步减少它与原始输入之间的距离</strong>（通常是<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>ℓ</mi><mi>2</mi></msub></math>距离），使其越来越像原始输入，但仍然被误分类。它沿着决策边界移动。</p>
 <p>只需要模型输出最终的<strong>类别标签</strong>（硬标签），不需要概率分数。相比 ZOO 等方法，在某些情况下<strong>查询效率更高</strong>。属于决策型攻击。</p>
-<h4 id="13">13. 单像素攻击</h4>
+<h4 id="13-单像素攻击">13. 单像素攻击<a class="headerlink" href="#13-单像素攻击" title="Permanent link">&para;</a></h4>
 <p>通过<strong>仅仅修改一个像素</strong>的值来欺骗深度神经网络。是一种极端的<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>ℓ</mi><mi>0</mi></msub></math>范数攻击。</p>
 <p>使用差分进化算法来搜索要修改哪个像素以及修改成什么值，通过查询模型输出概率（分数）来指导搜索。</p>
 <p>效果惊人地有效。</p>
-<h4 id="14">14. 热/冷方法</h4>
+<h4 id="14-热冷方法">14. 热/冷方法<a class="headerlink" href="#14-热冷方法" title="Permanent link">&para;</a></h4>
 <p>生成多样化的对抗样本。迭代地将样本<strong>推向目标类（热类）</strong>，同时<strong>远离原始类（冷类）</strong>。使用一种更符合<strong>人类感知</strong>的相似度度量 <strong>PASS</strong> 来约束扰动，而不是传统的<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><msub><mi>ℓ</mi><mi>p</mi></msub></math>范数。</p>
-<h4 id="15">15. 自然生成对抗网络</h4>
+<h4 id="15-自然生成对抗网络">15. 自然生成对抗网络<a class="headerlink" href="#15-自然生成对抗网络" title="Permanent link">&para;</a></h4>
 <p>利用<strong>生成对抗网络 (GAN)</strong> 来生成<strong>更自然、更逼真</strong>的对抗样本，使扰动看起来不像人工噪声，而是像真实数据的自然变化。</p>
 <p>生成的样本更自然；可应用于图像、文本等领域。</p>
-<h4 id="16">16. 基于模型的集成攻击</h4>
-<p>为了<strong>提高对抗样本（尤其是目标性样本）的迁移性</strong>，在生成对抗样本时，同时攻击一个<strong>已知模型（白盒）的集合 </strong>。优化对抗样本 <code>x'</code>，使其能欺骗多个已知模型的加权组合，比如将损失函数设置为所有模型的损失函数之和。</p>
+<h4 id="16-基于模型的集成攻击">16. 基于模型的集成攻击<a class="headerlink" href="#16-基于模型的集成攻击" title="Permanent link">&para;</a></h4>
+<p>为了<strong>提高对抗样本（尤其是目标性样本）的迁移性</strong>，在生成对抗样本时，同时攻击一个*<em>已知模型（白盒）的集合 *</em>。优化对抗样本 <code>x'</code>，使其能欺骗多个已知模型的加权组合，比如将损失函数设置为所有模型的损失函数之和。</p>
 <p>可以显著提升对抗样本在不同模型间的迁移能力，对黑盒攻击非常有效。</p>
-<h4 id="17">17. 基准真相攻击</h4>
+<h4 id="17-基准真相攻击">17. 基准真相攻击<a class="headerlink" href="#17-基准真相攻击" title="Permanent link">&para;</a></h4>
 <p>利用<strong>形式化验证 (Formal Verification)</strong> 工具来寻找<strong>理论上最小</strong>的扰动，从而得到“基准真相”级别的对抗样本。</p>
 <p>提供扰动大小的严格下界；计算成本极高；主要用于评估模型的真实鲁棒性。</p>
-<h2 id="_8">对抗样本应用</h2>
+<h2 id="对抗样本应用">对抗样本应用<a class="headerlink" href="#对抗样本应用" title="Permanent link">&para;</a></h2>
 <p>这一章节主要讲除了图像分类的那些任务中，对抗样本的作用和效果。</p>
-<h3 id="_9">强化学习</h3>
+<h3 id="强化学习">强化学习<a class="headerlink" href="#强化学习" title="Permanent link">&para;</a></h3>
 <p>对抗样本在深度强化学习（DRL）领域的应用，主要是作为攻击手段。相关研究揭示：</p>
 <ol>
 <li>DRL 易受攻击:基于深度神经网络的 DRL 策略（如 DQN, TRPO, A3C）与监督学习模型一样，容易受到对抗样本的攻击。</li>
@@ -2112,23 +2405,23 @@
 <p>攻击 DRL 时，无需扰动每一帧输入，仅扰动部分帧就可能足以使策略失效。</p>
 </li>
 </ol>
-<h3 id="_10">生成模型</h3>
+<h3 id="生成模型">生成模型<a class="headerlink" href="#生成模型" title="Permanent link">&para;</a></h3>
 <ol>
 <li>生成模型也易受攻击: 像 VAE 和 GAN 这样的生成模型，尽管在生成逼真数据方面很成功，但它们同样容易受到对抗攻击。对输入进行微小扰动，导致模型重构的输出发生巨大变化，破坏其编码，解码能力。</li>
 <li>攻击 GAN 判别器，可以通过 FGSM 等方法，对生成器产生的图像添加微小扰动，使得原本能骗过判别器的图像轻易被识别为假，揭示了生成图像在判别器决策边界附近的脆弱性。</li>
 <li>评估生成模型质量: 对抗鲁棒性可以作为一个新的维度来评估生成模型。对扰动更鲁棒的模型可能意味着它学习到了更稳定、更优质的数据表示。</li>
 </ol>
-<h3 id="_11">人脸识别</h3>
+<h3 id="人脸识别">人脸识别<a class="headerlink" href="#人脸识别" title="Permanent link">&para;</a></h3>
 <ol>
 <li>物理攻击: 研究证明通过精心设计的物理对象（如眼镜框）可以成功攻击人脸识别系统。</li>
 <li>攻击效果: 物理攻击可以实现高成功率的躲避（目标不被识别）和冒充（另一目标）。</li>
 </ol>
-<h3 id="_12">语义分割</h3>
+<h3 id="语义分割">语义分割<a class="headerlink" href="#语义分割" title="Permanent link">&para;</a></h3>
 <ol>
 <li>这些任务的模型与分类模型任务类似，可以推断，并且也证实了其易受到对抗攻击。现有的攻击技术（如 FGSM、BIM）可以被调整用于攻击分割和检测模型。</li>
 <li>即使是顶尖模型也存在此漏洞，微小扰动就能导致灾难性错误，这对自动驾驶等<strong>安全</strong>攸关的现实应用构成了严峻挑战。这点和上课提到的许多例子呼应。</li>
 </ol>
-<h3 id="nlp">NLP</h3>
+<h3 id="nlp">NLP<a class="headerlink" href="#nlp" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p>研究通过在阅读理解段落末尾添加干扰句，发现模型存在“过稳定”问题，即难以发现微小的语义变化，甚至矛盾。</p>
@@ -2140,12 +2433,12 @@
 <p>提高 NLP 对抗样本的自然性和隐蔽性仍是重要研究方向。</p>
 </li>
 </ol>
-<h1 id="_13">防御手段</h1>
+<h1 id="防御手段">防御手段<a class="headerlink" href="#防御手段" title="Permanent link">&para;</a></h1>
 <p>当时的对抗防御方法普遍存在局限：大多仅对部分已知攻击有效，难以防御强攻击或未知攻击，且研究主要集中于计算机视觉领域。</p>
-<h3 id="_14">网络蒸馏</h3>
+<h3 id="网络蒸馏">网络蒸馏<a class="headerlink" href="#网络蒸馏" title="Permanent link">&para;</a></h3>
 <p>一种<strong>主动防御</strong>手段，利用高温度 T 的 Softmax 从教师模型提取平滑的概率分布来训练学生模型。其核心思想是降低模型对输入的敏感性，从而抵抗利用敏感性的对抗攻击。虽然在 MNIST/CIFAR-10 上对 JSMA 攻击显示了一定的效果（成功率降低 0.5%/5%），但其防御能力可能有限。</p>
 <p>蒸馏同时也能提升模型的泛化能力。</p>
-<h3 id="_15">对抗训练</h3>
+<h3 id="对抗训练">对抗训练<a class="headerlink" href="#对抗训练" title="Permanent link">&para;</a></h3>
 <p>对抗训练是目前最主流和有效的<strong>主动防御</strong>方法，它将动态生成的<strong>对抗样本（及其正确标签）注入训练过程</strong> 。早期基于单步攻击的方法主要防御同类攻击并起正则化（防止过拟合）作用，并且对抗训练还能提高模型在干净数据上的准确率。</p>
 <p>续研究发现模型对白盒攻击鲁棒性优于黑盒迁移攻击。改进方法包括：</p>
 <ul>
@@ -2156,18 +2449,18 @@
 <p>集成对抗训练（使用来自多模型的样本）以提升对黑盒攻击的鲁棒性，让模型熟悉不同所谓的视角的攻击。</p>
 </li>
 </ul>
-<h3 id="_16">对抗检测</h3>
+<h3 id="对抗检测">对抗检测<a class="headerlink" href="#对抗检测" title="Permanent link">&para;</a></h3>
 <p>对抗检测作为<strong>被动防御</strong>，<strong>在推理时识别恶意输入</strong>。方法多样，包括训练专门的辅助检测器、利用模型不确定性、分析统计特性、使用生成模型评估似然度等等。然而，关键弱点在于易被了解检测机制的自适应攻击绕过，可靠性存疑。</p>
-<h3 id="_17">输入重建</h3>
+<h3 id="输入重建">输入重建<a class="headerlink" href="#输入重建" title="Permanent link">&para;</a></h3>
 <p>输入重建也是<strong>被动防御</strong>，试图在输入送入模型前<strong>“净化”掉对抗扰动</strong>。常用技术包括训练各种自编码器将输入映射回干净数据流形，或应用简单变换如添加噪声。本质上是把输入“拉回”到模型认为最接近它的、最“自然”的图像。</p>
-<h3 id="_18">分类器鲁棒化</h3>
+<h3 id="分类器鲁棒化">分类器鲁棒化<a class="headerlink" href="#分类器鲁棒化" title="Permanent link">&para;</a></h3>
 <p>分类器鲁棒化属于主动防御，侧重于<strong>改进模型本身架构</strong>。一种方法是将高斯过程融入 DNN，利用其不确定性估计能力识别可疑输入。另一种方法基于对抗攻击常诱导模型将其判断为少数错误类的观察，将类别细分为子类，通过投票集合子类预测结果来增强对错误分类的抵抗力，提升整体鲁棒性。</p>
-<h3 id="_19">网络验证</h3>
+<h3 id="网络验证">网络验证<a class="headerlink" href="#网络验证" title="Permanent link">&para;</a></h3>
 <p>网络验证运用形式化方法（一些检查器），试图提供数学保证，<strong>证明在特定扰动范围内不存在对抗样本</strong>，潜力在于防御未知攻击。具体方法有Reluplex，证明relu网络有小范围内的鲁棒性；和DeepSafe，寻找安全区域，或者保证样本不会被误分类到某一个类别。</p>
 <p>主要瓶颈是 NP-complete 的计算复杂度和极差的可扩展性，通常仅适用于小型网络。虽有优化尝试，但实用性仍受限。毕竟算整个网络这件事太复杂了。</p>
-<h2 id="_20">问题与挑战</h2>
+<h2 id="问题与挑战">问题与挑战<a class="headerlink" href="#问题与挑战" title="Permanent link">&para;</a></h2>
 <p>对抗样本领域的问题与挑战，涵盖了对抗样本的<strong>存在性根源</strong>、<strong>迁移性机制与阻断</strong>以及<strong>模型鲁棒性评估</strong>等方面</p>
-<h3 id="_21">迁移性</h3>
+<h3 id="迁移性">迁移性<a class="headerlink" href="#迁移性" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p>迁移性是对抗样本能攻击未知模型的关键属性，对黑盒攻击至关重要。理解并阻断迁移性是防御研究的重要方向。迁移性不仅存在于不同 DNN 之间，甚至可以跨越传统机器学习模型和 DNN，显示了其广泛性。</p>
@@ -2191,14 +2484,14 @@
 </li>
 <li>一种几何解释认为迁移性源于：模型间决策边界距离，小于样本到边界距离。</li>
 </ol>
-<h3 id="_22">存在性</h3>
+<h3 id="存在性">存在性<a class="headerlink" href="#存在性" title="Permanent link">&para;</a></h3>
 <p>为什么对抗样本存在？为什么更改几个像素点就会让模型误判，这是神经网络的固有弱点吗？但并无定论，只有几个假说。</p>
 <ol>
 <li>一种假说认为对抗样本源于<strong>训练数据不完备</strong>，未能覆盖低概率的边界情况，模型在这些区域行为异常，也就是说增加数据量和覆盖面可能可以提升鲁棒性。</li>
 <li>也有一派假说认为，模型自身架构有缺陷。但是这一派内部也不能统一说法。有的认为模型在高维过于线性，另一派认为模型灵活性不足，还有观点归咎于数据流形本身的特性。</li>
 <li>更悲观的假说认为 DNN 的决策边界未捕捉语义，即根本上，理论上，就不存在完全鲁棒的模型。。</li>
 </ol>
-<h3 id="_23">鲁棒性评估</h3>
+<h3 id="鲁棒性评估">鲁棒性评估<a class="headerlink" href="#鲁棒性评估" title="Permanent link">&para;</a></h3>
 <ol>
 <li>现状是：有新的攻击方法，就有新的防御方法，而这个防御方法很快被找到新的漏洞，所以需要有一个好办法来进行鲁棒性评估<strong>，但是目前还没有，所以作者呼吁设立一些理论与benchmark</strong>。</li>
 <li>并且，对于神经网络，最重要的是评估其面对全新的攻击方法的鲁棒性，这有助于人们理解模型预测的<strong>置信度</strong> 以及我们在现实世界中可以多大程度上依赖它们。</li>
@@ -2227,6 +2520,12 @@
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
       </main>
       
         <footer class="md-footer">
@@ -2253,13 +2552,18 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.path", "navigation.sections", "navigation.expand", "navigation.top", "navigation.tabs", "content.code.annotate", "content.code.copy", "navigation.tracking"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
+  
       <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       
     
+
+  <!-- Extra JavaScript (can't be set in mkdocs.yml due to content hash) -->
+  <script src="../../../assets/javascripts/custom.ts"></script>
+
   </body>
 </html>
