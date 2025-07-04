@@ -1,28 +1,6 @@
-<!--
-  Copyright (c) 2016-2025 Martin Donath <martin.donath@squidfunk.com>
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to
-  deal in the Software without restriction, including without limitation the
-  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-  sell copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in
-  all copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-  IN THE SOFTWARE.
--->
-
 
 <!doctype html>
-<html lang="zh" class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -30,28 +8,25 @@
       
       
       
-        <link rel="canonical" href="http://biolbe1230.github.io/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/Nerual_Network/4%E4%BB%8E%E7%BF%BB%E8%AF%91%E5%88%B0Transformer/">
+        <link rel="canonical" href="https://mydomain.org/mysite/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/Nerual_Network/4%E4%BB%8E%E7%BF%BB%E8%AF%91%E5%88%B0Transformer/">
       
       
         <link rel="prev" href="../3%E5%85%B6%E5%AE%83%E6%9E%B6%E6%9E%84/">
       
       
-        <link rel="next" href="../../RAG/1RAG%E5%85%A5%E9%97%A8/">
+        <link rel="next" href="../5%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97/">
       
       
-      <link rel="icon" href="../../../img/fav.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
     
     
       
-        <title>4.机器翻译 - 买不到桂花的博客</title>
+        <title>4.机器翻译 - My site</title>
       
     
     
       <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
-      
-        
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -65,16 +40,10 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=LXGW+WenKai+Screen+GB+Screen:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"LXGW WenKai Screen GB Screen";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-    
-      <link rel="stylesheet" href="../../../_css/extra.css">
-    
-      <link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css">
-    
-      <link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -83,22 +52,10 @@
     
     
     
-
-  <!-- Extra style sheets (can't be set in mkdocs.yml due to content hash) -->
-  <link
-    rel="stylesheet"
-    href="../../../assets/stylesheets/custom.scss"
-  />
-
   </head>
   
   
-    
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="amber">
+    <body dir="ltr">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -108,7 +65,7 @@
       
         
         <a href="#rnn-lm" class="md-skip">
-          跳转至
+          Skip to content
         </a>
       
     </div>
@@ -119,11 +76,14 @@
     
       
 
-<header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../../.." title="买不到桂花的博客" class="md-header__button md-logo" aria-label="买不到桂花的博客" data-md-component="logo">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="My site" class="md-header__button md-logo" aria-label="My site" data-md-component="logo">
       
-  <img src="../../../img/logo.png" alt="logo">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -134,7 +94,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            买不到桂花的博客
+            My site
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -147,8 +107,8 @@
       </div>
     </div>
     
-      
     
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -160,16 +120,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="查找">
+      <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -180,7 +140,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            正在初始化搜索引擎
+            Initializing search
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -199,114 +159,6 @@
       
         
           
-            
-<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
-  <div class="md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
-        
-  
-    
-  
-  欢迎页
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-    
-  
-  
-    
-    
-      
-  
-  
-    
-  
-  
-    
-    
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../Agent/" class="md-tabs__link">
-          
-  
-    
-  
-  人工智能
-
-        </a>
-      </li>
-    
-  
-
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../%E7%94%B5%E5%AD%90%E8%8D%92%E5%8E%9F/Norco/" class="md-tabs__link">
-          
-  
-    
-  
-  电子荒原
-
-        </a>
-      </li>
-    
-  
-
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../%E8%BF%B7%E5%A4%B1%E7%8E%89%E8%A8%80/Git_basic/" class="md-tabs__link">
-          
-  
-    
-  
-  迷失玉言
-
-        </a>
-      </li>
-    
-  
-
-      
-    </ul>
-  </div>
-</nav>
-          
         
       
       <main class="md-main" data-md-component="main">
@@ -320,17 +172,16 @@
                     
 
 
-  
 
-
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="买不到桂花的博客" class="md-nav__button md-logo" aria-label="买不到桂花的博客" data-md-component="logo">
+    <a href="../../.." title="My site" class="md-nav__button md-logo" aria-label="My site" data-md-component="logo">
       
-  <img src="../../../img/logo.png" alt="logo">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    买不到桂花的博客
+    My site
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -366,34 +217,16 @@
   
     
     
-      
-        
-      
-        
-      
-        
-      
-        
-      
     
     
-      
-        
-        
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -420,39 +253,17 @@
   
     
     
-      
-        
-          
-        
-      
-        
-      
-        
-      
     
     
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
         
           
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../Agent/" class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Agent
@@ -460,14 +271,8 @@
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_1">
@@ -476,6 +281,26 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Agent/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Agent学习
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -538,37 +363,17 @@
   
     
     
-      
-        
-          
-        
-      
-        
-      
     
     
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../LLM/" class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     LLM
@@ -576,14 +381,8 @@
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_2">
@@ -592,6 +391,26 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LLM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LLM学习
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -634,41 +453,17 @@
   
     
     
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
     
     
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Nerual Network
@@ -676,14 +471,8 @@
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_3">
@@ -692,6 +481,26 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    神经网络
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -799,14 +608,14 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="目录">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      目录
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
@@ -821,7 +630,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#训练" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       训练
     </span>
@@ -830,7 +639,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#decode算法" class="md-nav__link">
+  <a href="#decode" class="md-nav__link">
     <span class="md-ellipsis">
       decode算法
     </span>
@@ -840,7 +649,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#greedy-search-贪婪搜索" class="md-nav__link">
+  <a href="#greedy-search" class="md-nav__link">
     <span class="md-ellipsis">
       Greedy Search (贪婪搜索)
     </span>
@@ -849,7 +658,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#random-sampling-纯随机采样" class="md-nav__link">
+  <a href="#random-sampling" class="md-nav__link">
     <span class="md-ellipsis">
       Random Sampling (纯随机采样)
     </span>
@@ -858,7 +667,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#top-k-sampling-top-k-采样" class="md-nav__link">
+  <a href="#top-k-sampling-top-k" class="md-nav__link">
     <span class="md-ellipsis">
       Top-K Sampling (Top-K 采样)
     </span>
@@ -867,7 +676,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#top-p-sampling-nucleus-sampling--核心采样" class="md-nav__link">
+  <a href="#top-p-sampling-nucleus-sampling" class="md-nav__link">
     <span class="md-ellipsis">
       Top-P Sampling (Nucleus Sampling / 核心采样)
     </span>
@@ -908,7 +717,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#评估" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       评估
     </span>
@@ -918,7 +727,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#人工评估" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       人工评估
     </span>
@@ -981,6 +790,50 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.随机森林
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6%E6%B7%B1%E5%85%A5%E7%89%B9%E5%BE%81%E5%AD%A6%E4%B9%A0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6.继续特征学习
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -997,32 +850,16 @@
   
     
     
-      
-        
-      
-        
-      
     
     
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
         
           
-          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1108,27 +945,81 @@
   
     
     
-      
-        
-      
-    
-    
-      
-      
-        
-      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    具身智能
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            具身智能
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/LeVERB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LeVERB阅读
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1140,8 +1031,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             电子荒原
           </label>
@@ -1155,36 +1046,17 @@
   
     
     
-      
-        
-          
-        
-      
-        
-      
-        
-      
-    
-    
-      
-      
-        
-      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
         
           
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../../%E7%94%B5%E5%AD%90%E8%8D%92%E5%8E%9F/Norco/" class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Norco
@@ -1192,22 +1064,36 @@
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_1">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
             <span class="md-nav__icon md-icon"></span>
             Norco
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%94%B5%E5%AD%90%E8%8D%92%E5%8E%9F/Norco/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Norco playblog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -1277,29 +1163,16 @@
   
     
     
-      
-        
-      
-        
-      
-    
-    
-      
-      
-        
-      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1311,8 +1184,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             迷失玉言
           </label>
@@ -1382,14 +1255,14 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="目录">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      目录
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
@@ -1404,7 +1277,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#训练" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       训练
     </span>
@@ -1413,7 +1286,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#decode算法" class="md-nav__link">
+  <a href="#decode" class="md-nav__link">
     <span class="md-ellipsis">
       decode算法
     </span>
@@ -1423,7 +1296,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#greedy-search-贪婪搜索" class="md-nav__link">
+  <a href="#greedy-search" class="md-nav__link">
     <span class="md-ellipsis">
       Greedy Search (贪婪搜索)
     </span>
@@ -1432,7 +1305,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#random-sampling-纯随机采样" class="md-nav__link">
+  <a href="#random-sampling" class="md-nav__link">
     <span class="md-ellipsis">
       Random Sampling (纯随机采样)
     </span>
@@ -1441,7 +1314,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#top-k-sampling-top-k-采样" class="md-nav__link">
+  <a href="#top-k-sampling-top-k" class="md-nav__link">
     <span class="md-ellipsis">
       Top-K Sampling (Top-K 采样)
     </span>
@@ -1450,7 +1323,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#top-p-sampling-nucleus-sampling--核心采样" class="md-nav__link">
+  <a href="#top-p-sampling-nucleus-sampling" class="md-nav__link">
     <span class="md-ellipsis">
       Top-P Sampling (Nucleus Sampling / 核心采样)
     </span>
@@ -1491,7 +1364,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#评估" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       评估
     </span>
@@ -1501,7 +1374,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#人工评估" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       人工评估
     </span>
@@ -1569,69 +1442,41 @@
                 
                   
 
-  <nav class="md-tags" >
-    
-      
-      
-      
-        <span class="md-tag">AI</span>
-      
-    
-      
-      
-      
-        <span class="md-tag">Basic</span>
-      
-    
-      
-      
-      
-        <span class="md-tag">LLM</span>
-      
-    
-      
-      
-      
-        <span class="md-tag">NN</span>
-      
-    
-  </nav>
-
 
 
   <h1>4.机器翻译</h1>
 
-<h2 id="rnn-lm">RNN-LM<a class="headerlink" href="#rnn-lm" title="Permanent link">&para;</a></h2>
+<h2 id="rnn-lm">RNN-LM</h2>
 <p>Language Model是给定一个词汇序列，生成下一个词汇概率的模型，使用RNN的LM就叫做RNN-LM。如下，整个序列的信息通过hidden 
 state传递，每次输入上次输出的单词，输出下一个单词。
-<img alt="alt text" src="../%E4%BB%8E%E7%BF%BB%E8%AF%91%E5%88%B0Transformer.assets/RNN1.png" style="display: block; margin-left: auto; margin-right: auto;" width="80%" />
+<img alt="alt text" src="../%E4%BB%8E%E7%BF%BB%E8%AF%91%E5%88%B0Transformer.assets/RNN1.png" />{ width="80%" style="display: block; margin-left: auto; margin-right: auto;" }
 如下是将encoder加入的翻译器结构。
-<img alt="alt text" src="../%E4%BB%8E%E7%BF%BB%E8%AF%91%E5%88%B0Transformer.assets/RNN2.png" style="display: block; margin-left: auto; margin-right: auto;" width="80%" /></p>
-<h3 id="训练">训练<a class="headerlink" href="#训练" title="Permanent link">&para;</a></h3>
+<img alt="alt text" src="../%E4%BB%8E%E7%BF%BB%E8%AF%91%E5%88%B0Transformer.assets/RNN2.png" />{ width="80%" style="display: block; margin-left: auto; margin-right: auto;" }</p>
+<h3 id="_1">训练</h3>
 <p>RNN-LM 通常通过最大化训练语料库的似然来训练。这等价于最小化负对数似然（也就是交叉熵损失）。在每个时间步，模型预测下一个词的概率分布，并将其与实际的下一个词进行比较，计算损失。使用反向传播算法的变体 BPTT (Backpropagation Through Time) 来计算梯度并更新模型参数。
  最开始，可以使用<strong>Teacher Forcing</strong>进行训练，给decoder输入一些“金句”，即参考句子，不管它输出什么。</p>
-<h3 id="decode算法">decode算法<a class="headerlink" href="#decode算法" title="Permanent link">&para;</a></h3>
+<h3 id="decode">decode算法</h3>
 <p>现在我们训好了一个LM，可以预测下一个词汇的概率，但我们该怎么用它生成一个句子呢？<strong>在decoder中，该怎么决定每次输出哪个呢？</strong></p>
-<h4 id="greedy-search-贪婪搜索">Greedy Search (贪婪搜索)<a class="headerlink" href="#greedy-search-贪婪搜索" title="Permanent link">&para;</a></h4>
+<h4 id="greedy-search">Greedy Search (贪婪搜索)</h4>
 <p><strong>方法</strong>: 在每个时间步，总是选择概率最高的那个词 (argmax)。</p>
 <p><strong>问题</strong>：太过确定，总会选择高频词，不会选择冷门词汇，并且容易陷入循环。</p>
 <p><strong>和argmax区别</strong>：argmax 是 Greedy Search 在每一步决策时使用的具体<strong>工具</strong>，而 Greedy Search 是使用这个工具来构建完整序列的<strong>策略</strong>。</p>
-<h4 id="random-sampling-纯随机采样">Random Sampling (纯随机采样)<a class="headerlink" href="#random-sampling-纯随机采样" title="Permanent link">&para;</a></h4>
+<h4 id="random-sampling">Random Sampling (纯随机采样)</h4>
 <p><strong>方法</strong>：如其名，随机选。。</p>
 <p><strong>问题</strong>：全是问题</p>
-<h4 id="top-k-sampling-top-k-采样">Top-K Sampling (Top-K 采样)<a class="headerlink" href="#top-k-sampling-top-k-采样" title="Permanent link">&para;</a></h4>
+<h4 id="top-k-sampling-top-k">Top-K Sampling (Top-K 采样)</h4>
 <p><strong>方法</strong>: 在每个时间步，只考虑概率最高的 K 个词。将这 K 个词的原始概率（或经过温度调整后的概率）重新归一化，然后从这个缩小的集合中进行采样。</p>
 <p><strong>问题</strong>：K在不同情况下的最优值不一样，但是作为超参数，我们只能让其为固定值。</p>
-<h4 id="top-p-sampling-nucleus-sampling--核心采样">Top-P Sampling (Nucleus Sampling / 核心采样)<a class="headerlink" href="#top-p-sampling-nucleus-sampling--核心采样" title="Permanent link">&para;</a></h4>
+<h4 id="top-p-sampling-nucleus-sampling">Top-P Sampling (Nucleus Sampling / 核心采样)</h4>
 <p><strong>方法</strong>: 选择一个概率阈值 p (例如 p=0.9)。在每个时间步，按概率降序排列词汇，然后选择概率之和刚好大于或等于 p 的最小词汇集合。然后，将这个集合中的词的概率重新归一化，并从中采样。</p>
 <p><strong>问题</strong>: 仍然需要选择合适的 p 值，但通常比选择 K 更鲁棒一些。</p>
-<h4 id="pure-sampling">Pure sampling<a class="headerlink" href="#pure-sampling" title="Permanent link">&para;</a></h4>
+<h4 id="pure-sampling">Pure sampling</h4>
 <p><strong>方法</strong>: 选择一个概率阈值 p (例如 p=0.9)。在每个时间步，按概率降序排列词汇，然后选择概率之和刚好大于或等于 p 的最小词汇集合。然后，将这个集合中的词的概率重新归一化，并从中采样。</p>
 <p><strong>问题</strong>: 仍然需要选择合适的 p 值，但通常比选择 K 更鲁棒一些。</p>
-<h4 id="beam-search-decoding">Beam search decoding<a class="headerlink" href="#beam-search-decoding" title="Permanent link">&para;</a></h4>
+<h4 id="beam-search-decoding">Beam search decoding</h4>
 <p>每一步，只留k个最可能的项，k=1是就是贪婪算法。
-<img alt="alt text" src="../%E4%BB%8E%E7%BF%BB%E8%AF%91%E5%88%B0Transformer.assets/RNN3.png" style="display: block; margin-left: auto; margin-right: auto;" width="50%" /></p>
-<h4 id="softmax-temperature">Softmax temperature<a class="headerlink" href="#softmax-temperature" title="Permanent link">&para;</a></h4>
+<img alt="alt text" src="../%E4%BB%8E%E7%BF%BB%E8%AF%91%E5%88%B0Transformer.assets/RNN3.png" />{ width="50%" style="display: block; margin-left: auto; margin-right: auto;" }</p>
+<h4 id="softmax-temperature">Softmax temperature</h4>
 <p>在传统softmax中加入了温度t，将每个概率先除以t，在作为指数进行softmax。</p>
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>p</mi><mi>i</mi></msub><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo><mo>=</mo><mi>s</mi><mi>o</mi><mi>f</mi><mi>t</mi><mi>m</mi><mi>a</mi><mi>x</mi><mo stretchy="false">(</mo><msub><mi>z</mi><mi>i</mi></msub><mrow><mo>/</mo></mrow><mi>T</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><msup><mi>e</mi><mrow><mo stretchy="false">(</mo><mfrac><msub><mi>z</mi><mi>i</mi></msub><mi>T</mi></mfrac><mo stretchy="false">)</mo></mrow></msup><mrow><mi>s</mi><mi>u</mi><mi>m</mi><mo stretchy="false">(</mo><msup><mi>e</mi><mrow><mo stretchy="false">(</mo><mfrac><msub><mi>z</mi><mi>j</mi></msub><mi>T</mi></mfrac><mo stretchy="false">)</mo></mrow></msup><mo stretchy="false">)</mo></mrow></mfrac></math>
 
@@ -1640,10 +1485,10 @@ state传递，每次输入上次输出的单词，输出下一个单词。
 <li>T &lt; 1：模型会更倾向于选择它认为最可能的选项。生成的序列会更加保守、可预测，更接近于模型的“核心”知识。</li>
 </ul>
 <p>就像deepseek的api文档里，编程t=0，分析t=1，诗歌创作t=1.5。</p>
-<h3 id="评估">评估<a class="headerlink" href="#评估" title="Permanent link">&para;</a></h3>
-<h4 id="人工评估">人工评估<a class="headerlink" href="#人工评估" title="Permanent link">&para;</a></h4>
+<h3 id="_2">评估</h3>
+<h4 id="_3">人工评估</h4>
 <p>准确全面，但昂贵耗时主观。</p>
-<h4 id="bleu">BLEU<a class="headerlink" href="#bleu" title="Permanent link">&para;</a></h4>
+<h4 id="bleu">BLEU</h4>
 <p>比较机器翻译输出（Candidate）和一个或多个高质量的人工参考翻译（References）之间n-gram（通常是 1 到 4-gram）的重叠程度。</p>
 <p>计算方法：</p>
 <ul>
@@ -1661,15 +1506,15 @@ state传递，每次输入上次输出的单词，输出下一个单词。
 </li>
 </ul>
 <p>但是,在句子级别 (Sentence Level) 相关性差，且不关心语义，语法。</p>
-<h4 id="meteor">METEOR<a class="headerlink" href="#meteor" title="Permanent link">&para;</a></h4>
+<h4 id="meteor">METEOR</h4>
 <p>类似BLEU，但是：</p>
 <ul>
 <li>考虑同义词和词干：比 BLEU 更懂语义。</li>
 <li>考虑词序 (通过碎片惩罚): 对语序不佳的翻译会扣分。</li>
 </ul>
-<h4 id="perplexity-ppl">Perplexity (PPL)<a class="headerlink" href="#perplexity-ppl" title="Permanent link">&para;</a></h4>
+<h4 id="perplexity-ppl">Perplexity (PPL)</h4>
 <p>衡量一个语言模型对一段给定文本的预测能力。PPL 越低，表示 LM 认为这段文本出现的概率越高，也就是越符合该 LM 所学习到的语言模式。</p>
-<h2 id="statistic-machine-translation">Statistic Machine Translation<a class="headerlink" href="#statistic-machine-translation" title="Permanent link">&para;</a></h2>
+<h2 id="statistic-machine-translation">Statistic Machine Translation</h2>
 <p>统计机器翻译（SMT）：最初是算词库中，所有词哪个概率最大；或者对于一句话，另一个语言中哪个句子概率最大</p>
 <p><code>ê = argmax_e P(e|f)</code></p>
 <ul>
@@ -1685,7 +1530,7 @@ state传递，每次输入上次输出的单词，输出下一个单词。
 </ul>
 <p>​   给定一个目标语言句子 <em>e</em>，它对应回源语言句子 <em>f</em> 的概率是多少？</p>
 <p>​   通过Alignment，词对齐，或者短语对齐来求。</p>
-<p><img alt="image-20250411143709701" src="../%E4%BB%8E%E7%BF%BB%E8%AF%91%E5%88%B0Transformer.assets/SMT1.png" style="display: block; margin-left: auto; margin-right: auto;" width="80%" /></p>
+<p><img alt="image-20250411143709701" src="../%E4%BB%8E%E7%BF%BB%E8%AF%91%E5%88%B0Transformer.assets/SMT1.png" />{ width="80%" style="display: block; margin-left: auto; margin-right: auto;" }</p>
 <ul>
 <li>
 <p><strong>语言模型 (Language Model) - <code>P(e)</code></strong>:</p>
@@ -1727,12 +1572,6 @@ state传递，每次输入上次输出的单词，输出下一个单词。
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
-          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
-  回到页面顶部
-</button>
-        
       </main>
       
         <footer class="md-footer">
@@ -1759,16 +1598,13 @@ state传递，每次输入上次输出的单词，输出下一个单词。
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.instant.preview", "navigation.indexes", "navigation.path", "navigation.sections", "navigation.expand", "navigation.top", "navigation.tabs", "content.code.annotate", "content.code.copy", "navigation.tracking"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-  
       <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
     
-
-  <!-- Extra JavaScript (can't be set in mkdocs.yml due to content hash) -->
-  <script src="../../../assets/javascripts/custom.ts"></script>
-
   </body>
 </html>
