@@ -1490,23 +1490,22 @@
 <p>判别器<span class="arithmatex">\(f\)</span>，是通过<strong>对抗学习</strong>，试图最小化——有无视觉图片的数据生成的LeVERB-VL生成的潜在向量的差距。具体来说，对那些
 只有文字描述的轨迹，添加一张白噪声图像，系统2接受输入，并且输出一个<span class="arithmatex">\(z_t\)</span>，<span class="arithmatex">\(f\)</span>则通过<span class="arithmatex">\(z_t\)</span>判断输入中有无真实图像，
 由此<strong>鼓励LeVERB-VL生成模态无关的潜在向量。</strong></p>
-<p>​最终训练目标：
-- 轨迹重建：最小化运动学decoder（接受<span class="arithmatex">\(z_t\)</span>输出未来轨迹）的输出与真实未来动作之间的差距。
-- 分布对齐：最小化LeVERB-VL的输出(先验分布)和加了运动学encoder的输出(后验分布)之间的差距
-- 对抗性分类：使用判别器，让LeVERB-VL学习到模态无关的更本质的信息。
+<p>​最终训练目标：</p>
+<ul>
+<li>轨迹重建：最小化运动学decoder（接受<span class="arithmatex">\(z_t\)</span>输出未来轨迹）的输出与真实未来动作之间的差距。</li>
+<li>分布对齐：最小化LeVERB-VL的输出(先验分布)和加了运动学encoder的输出(后验分布)之间的差距</li>
+<li>对抗性分类：使用判别器，让LeVERB-VL学习到模态无关的更本质的信息。
 <script type="math/tex; mode=display">
 \mathcal{L}(\theta_{VL},\psi) = \underbrace{\mathbb{E}_{...}[||D_{\psi}(s_t, z) - s_{t+1:t+M}^{R}||_2^2]}_{\text{轨迹重建}} + \underbrace{\beta_1 D_{KL}(q(z_t) || p(z_t))}_{\text{分布对齐}} + \underbrace{\beta_2 \mathcal{L}_{disc}(z_t)}_{\text{对抗性分类}} \quad (2)
 </script>
-</p>
+</li>
+</ul>
 <h3 id="leverb-a系统1架构与训练">LeVERB-A(系统1)架构与训练<a class="headerlink" href="#leverb-a系统1架构与训练" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code>训练好系统<span class="mi">2</span>后，冻结系统<span class="mi">2</span>的参数，开始<span class="nv">LeVERB</span><span class="o">-</span><span class="nv">A的训练</span>。通过蒸馏，获得一个与<span class="nv">LeVERB</span><span class="o">-</span><span class="nf">VL输出</span><span class="p">($</span><span class="nv">z</span><span class="p">$)</span>相匹配的策略。
-
-首先训练许多教师模型，这些模型接受参考动作和自身传感器观测，输出专家动作<span class="p">$</span><span class="nv">a_t</span><span class="p">$</span>
-
-然后将多个教师模型的策略，蒸馏到同一个学生模型中。每个<span class="nv">episode</span>，从训练集里获取一个轨迹，输入系统<span class="mi">2</span>，从其潜在空间的分布里，
-采样一个<span class="p">$</span><span class="nv">z_t</span><span class="p">$(</span>而非固定使用均值，加强鲁棒性<span class="p">)</span>。将<span class="p">$</span><span class="nv">z_t</span><span class="p">,</span><span class="w"> </span><span class="nv">o_</span><span class="p">{</span><span class="nv">t</span><span class="p">}</span>&amp;<span class="p">{</span><span class="nv">prop</span><span class="p">}$</span>输入<span class="nv">LeVERB</span><span class="o">-</span><span class="nv">A</span>，用<span class="nv">DAgger算法蒸馏</span>，进行训练。但是部署时，
-就不用采样了，直接使用<span class="nv">LeVERB</span><span class="o">-</span><span class="nv">VL输出的潜在空间的多维均值</span><span class="p">$</span>μ<span class="nv">_ρ</span><span class="p">$</span>
-</code></pre></div>
+<p>训练好系统2后，冻结系统2的参数，开始LeVERB-A的训练。通过蒸馏，获得一个与LeVERB-VL输出(<span class="arithmatex">\(z\)</span>)相匹配的策略。</p>
+<p>首先训练许多教师模型，这些模型接受参考动作和自身传感器观测，输出专家动作<span class="arithmatex">\(a_t\)</span></p>
+<p>然后将多个教师模型的策略，蒸馏到同一个学生模型中。每个episode，从训练集里获取一个轨迹，输入系统2，从其潜在空间的分布里，
+采样一个<span class="arithmatex">\(z_t\)</span>(而非固定使用均值，加强鲁棒性)。将<span class="arithmatex">\(z_t, o_{t}&amp;{prop}\)</span>输入LeVERB-A，用DAgger算法蒸馏，进行训练。但是部署时，
+就不用采样了，直接使用LeVERB-VL输出的潜在空间的多维均值<span class="arithmatex">\(μ_ρ\)</span></p>
 
 
 
