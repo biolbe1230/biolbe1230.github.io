@@ -1504,7 +1504,7 @@
 <p>训练好系统2后，冻结系统2的参数，开始LeVERB-A的训练。通过蒸馏，获得一个与LeVERB-VL输出(<span class="arithmatex">\(z\)</span>)相匹配的策略。</p>
 <p>首先训练许多教师模型，这些模型接受参考动作和自身传感器观测，输出专家动作<span class="arithmatex">\(a_t\)</span></p>
 <p>然后将多个教师模型的策略，蒸馏到同一个学生模型中。每个episode，从训练集里获取一个轨迹，输入系统2，从其潜在空间的分布里，
-采样一个<span class="arithmatex">\(z_t\)</span>(而非固定使用均值，加强鲁棒性)。将<span class="arithmatex">\(z_t, o_{t}&amp;{prop}\)</span>输入LeVERB-A，用DAgger算法蒸馏，进行训练。但是部署时，
+采样一个<span class="arithmatex">\(z_t\)</span>(而非固定使用均值，加强鲁棒性)。将<span class="arithmatex">\(z_t, o_{t}^{prop}\)</span>输入LeVERB-A，用DAgger算法蒸馏，进行训练。但是部署时，
 就不用采样了，直接使用LeVERB-VL输出的潜在空间的多维均值<span class="arithmatex">\(μ_ρ\)</span></p>
 
 
