@@ -30,28 +30,28 @@
       
       
       
-        <link rel="canonical" href="http://biolbe1230.github.io/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/Nerual_Network/">
+        <link rel="canonical" href="http://biolbe1230.github.io/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/RL/Reading1/">
       
       
-        <link rel="prev" href="../LLM/LLM%E5%85%A5%E9%97%A8/">
+        <link rel="prev" href="../../RAG/2RAG%E4%BC%98%E5%8C%96/">
       
       
-        <link rel="next" href="1%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0/">
+        <link rel="next" href="../Reading2/">
       
       
-      <link rel="icon" href="../../img/fav.png">
+      <link rel="icon" href="../../../img/fav.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
     
     
       
-        <title>神经网络 - 买不到桂花的博客</title>
+        <title>1.强化学习预训练综述 - 买不到桂花的博客</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -70,13 +70,13 @@
       
     
     
-      <link rel="stylesheet" href="../../_css/extra.css">
+      <link rel="stylesheet" href="../../../_css/extra.css">
     
       <link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css">
     
       <link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -87,7 +87,7 @@
   <!-- Extra style sheets (can't be set in mkdocs.yml due to content hash) -->
   <link
     rel="stylesheet"
-    href="../../assets/stylesheets/custom.scss"
+    href="../../../assets/stylesheets/custom.scss"
   />
 
   </head>
@@ -106,6 +106,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#总述" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -116,9 +121,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../.." title="买不到桂花的博客" class="md-header__button md-logo" aria-label="买不到桂花的博客" data-md-component="logo">
+    <a href="../../.." title="买不到桂花的博客" class="md-header__button md-logo" aria-label="买不到桂花的博客" data-md-component="logo">
       
-  <img src="../../img/logo.png" alt="logo">
+  <img src="../../../img/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -135,7 +140,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              神经网络
+              1.强化学习预训练综述
             
           </span>
         </div>
@@ -204,7 +209,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
     
@@ -233,7 +238,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../Agent/" class="md-tabs__link">
+        <a href="../../Agent/" class="md-tabs__link">
           
   
     
@@ -256,7 +261,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/LeVERB/" class="md-tabs__link">
+        <a href="../../../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/LeVERB/" class="md-tabs__link">
           
   
     
@@ -282,7 +287,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../%E7%94%B5%E5%AD%90%E8%8D%92%E5%8E%9F/Norco/" class="md-tabs__link">
+        <a href="../../../%E7%94%B5%E5%AD%90%E8%8D%92%E5%8E%9F/Norco/" class="md-tabs__link">
           
   
     
@@ -305,7 +310,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../%E8%BF%B7%E5%A4%B1%E7%8E%89%E8%A8%80/Git_basic/" class="md-tabs__link">
+        <a href="../../../%E8%BF%B7%E5%A4%B1%E7%8E%89%E8%A8%80/Git_basic/" class="md-tabs__link">
           
   
     
@@ -340,9 +345,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="买不到桂花的博客" class="md-nav__button md-logo" aria-label="买不到桂花的博客" data-md-component="logo">
+    <a href="../../.." title="买不到桂花的博客" class="md-nav__button md-logo" aria-label="买不到桂花的博客" data-md-component="logo">
       
-  <img src="../../img/logo.png" alt="logo">
+  <img src="../../../img/logo.png" alt="logo">
 
     </a>
     买不到桂花的博客
@@ -357,7 +362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -459,7 +464,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../Agent/" class="md-nav__link ">
+            <a href="../../Agent/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -493,7 +498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Agent/Agent%E5%85%A5%E9%97%A8/" class="md-nav__link">
+      <a href="../../Agent/Agent%E5%85%A5%E9%97%A8/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -515,7 +520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Agent/Agent%E6%A1%86%E6%9E%B6/" class="md-nav__link">
+      <a href="../../Agent/Agent%E6%A1%86%E6%9E%B6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -568,7 +573,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../LLM/" class="md-nav__link ">
+            <a href="../../LLM/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -602,7 +607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../LLM/LLM%E5%85%A5%E9%97%A8/" class="md-nav__link">
+      <a href="../../LLM/LLM%E5%85%A5%E9%97%A8/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -629,8 +634,6 @@
                 
   
   
-    
-  
   
   
     
@@ -658,16 +661,16 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../../Nerual_Network/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -679,13 +682,13 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             Nerual Network
@@ -701,7 +704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="1%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0/" class="md-nav__link">
+      <a href="../../Nerual_Network/1%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -723,7 +726,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" class="md-nav__link">
+      <a href="../../Nerual_Network/2%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -745,7 +748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="3%E5%85%B6%E5%AE%83%E6%9E%B6%E6%9E%84/" class="md-nav__link">
+      <a href="../../Nerual_Network/3%E5%85%B6%E5%AE%83%E6%9E%B6%E6%9E%84/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -767,7 +770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4%E4%BB%8E%E7%BF%BB%E8%AF%91%E5%88%B0Transformer/" class="md-nav__link">
+      <a href="../../Nerual_Network/4%E4%BB%8E%E7%BF%BB%E8%AF%91%E5%88%B0Transformer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -789,7 +792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="5%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97/" class="md-nav__link">
+      <a href="../../Nerual_Network/5%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -811,7 +814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="6%E6%B7%B1%E5%85%A5%E7%89%B9%E5%BE%81%E5%AD%A6%E4%B9%A0/" class="md-nav__link">
+      <a href="../../Nerual_Network/6%E6%B7%B1%E5%85%A5%E7%89%B9%E5%BE%81%E5%AD%A6%E4%B9%A0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -886,7 +889,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../RAG/1RAG%E5%85%A5%E9%97%A8/" class="md-nav__link">
+      <a href="../../RAG/1RAG%E5%85%A5%E9%97%A8/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -908,7 +911,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../RAG/2RAG%E4%BC%98%E5%8C%96/" class="md-nav__link">
+      <a href="../../RAG/2RAG%E4%BC%98%E5%8C%96/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -935,8 +938,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -950,11 +955,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
         
           
           <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
@@ -969,7 +974,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_5">
             <span class="md-nav__icon md-icon"></span>
             RL
@@ -980,10 +985,29 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../RL/Reading1/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    1.强化学习预训练综述
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -993,6 +1017,141 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#总述" class="md-nav__link">
+    <span class="md-ellipsis">
+      总述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#预备知识" class="md-nav__link">
+    <span class="md-ellipsis">
+      预备知识
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="预备知识">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#强化学习" class="md-nav__link">
+    <span class="md-ellipsis">
+      强化学习
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#预训练" class="md-nav__link">
+    <span class="md-ellipsis">
+      预训练
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#online预训练" class="md-nav__link">
+    <span class="md-ellipsis">
+      Online预训练
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Online预训练">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#好奇心驱动的探索" class="md-nav__link">
+    <span class="md-ellipsis">
+      好奇心驱动的探索
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#技能发掘" class="md-nav__link">
+    <span class="md-ellipsis">
+      技能发掘
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#最大数据覆盖" class="md-nav__link">
+    <span class="md-ellipsis">
+      最大数据覆盖
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#offline预训练" class="md-nav__link">
+    <span class="md-ellipsis">
+      Offline预训练
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Offline预训练">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#技能提炼" class="md-nav__link">
+    <span class="md-ellipsis">
+      技能提炼
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#表征学习" class="md-nav__link">
+    <span class="md-ellipsis">
+      表征学习
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1005,7 +1164,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../RL/Reading2/" class="md-nav__link">
+      <a href="../Reading2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1085,7 +1244,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/LeVERB/" class="md-nav__link">
+      <a href="../../../%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/LeVERB/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1182,7 +1341,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../%E7%94%B5%E5%AD%90%E8%8D%92%E5%8E%9F/Norco/" class="md-nav__link ">
+            <a href="../../../%E7%94%B5%E5%AD%90%E8%8D%92%E5%8E%9F/Norco/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1216,7 +1375,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E7%94%B5%E5%AD%90%E8%8D%92%E5%8E%9F/Norco/norco1/" class="md-nav__link">
+      <a href="../../../%E7%94%B5%E5%AD%90%E8%8D%92%E5%8E%9F/Norco/norco1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1238,7 +1397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E7%94%B5%E5%AD%90%E8%8D%92%E5%8E%9F/Norco/norco2/" class="md-nav__link">
+      <a href="../../../%E7%94%B5%E5%AD%90%E8%8D%92%E5%8E%9F/Norco/norco2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1320,7 +1479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E8%BF%B7%E5%A4%B1%E7%8E%89%E8%A8%80/Git_basic/" class="md-nav__link">
+      <a href="../../../%E8%BF%B7%E5%A4%B1%E7%8E%89%E8%A8%80/Git_basic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1342,7 +1501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%E8%BF%B7%E5%A4%B1%E7%8E%89%E8%A8%80/Shell_basic/" class="md-nav__link">
+      <a href="../../../%E8%BF%B7%E5%A4%B1%E7%8E%89%E8%A8%80/Shell_basic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1382,6 +1541,131 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#总述" class="md-nav__link">
+    <span class="md-ellipsis">
+      总述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#预备知识" class="md-nav__link">
+    <span class="md-ellipsis">
+      预备知识
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="预备知识">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#强化学习" class="md-nav__link">
+    <span class="md-ellipsis">
+      强化学习
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#预训练" class="md-nav__link">
+    <span class="md-ellipsis">
+      预训练
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#online预训练" class="md-nav__link">
+    <span class="md-ellipsis">
+      Online预训练
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Online预训练">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#好奇心驱动的探索" class="md-nav__link">
+    <span class="md-ellipsis">
+      好奇心驱动的探索
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#技能发掘" class="md-nav__link">
+    <span class="md-ellipsis">
+      技能发掘
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#最大数据覆盖" class="md-nav__link">
+    <span class="md-ellipsis">
+      最大数据覆盖
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#offline预训练" class="md-nav__link">
+    <span class="md-ellipsis">
+      Offline预训练
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Offline预训练">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#技能提炼" class="md-nav__link">
+    <span class="md-ellipsis">
+      技能提炼
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#表征学习" class="md-nav__link">
+    <span class="md-ellipsis">
+      表征学习
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1394,16 +1678,111 @@
                 
                   
 
+  <nav class="md-tags" >
+    
+      
+      
+      
+        <span class="md-tag">AI</span>
+      
+    
+      
+      
+      
+        <span class="md-tag">LLM</span>
+      
+    
+      
+      
+      
+        <span class="md-tag">Pretraining</span>
+      
+    
+      
+      
+      
+        <span class="md-tag">RL</span>
+      
+    
+  </nav>
 
 
-  <h1>神经网络</h1>
 
-<p>补充一些神经网络的基本知识。基本上想到哪写到哪，查缺补漏。</p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> LSTM，GRU</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> attention</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 从alexnet开始</li>
+  <h1>1.强化学习预训练综述</h1>
+
+<h2 id="总述">总述<a class="headerlink" href="#总述" title="Permanent link">&para;</a></h2>
+<p>强化学习面临两个主要问题，<strong>样本效率低下</strong>和<strong>泛化能力不足</strong>。如果RL能够像人类一样，从之前的类似任务中汲取动作模式，
+而非从头从头开始学交互，效率会大大提高。然而，大规模预训练(large-scale pretraining)在RL中，并不像在NLP和CV中效果那么好。</p>
+<p>总的来说，有<strong>三点</strong>从RL本质出发的困难在制约强化学习的预训练：</p>
+<ul>
+<li>任务和领域的多样性</li>
+<li>有限的数据来源，这个是scale up的瓶颈</li>
+<li>对下游任务难以快速适应</li>
 </ul>
+<h2 id="预备知识">预备知识<a class="headerlink" href="#预备知识" title="Permanent link">&para;</a></h2>
+<h3 id="强化学习">强化学习<a class="headerlink" href="#强化学习" title="Permanent link">&para;</a></h3>
+<p>强化学习，是要学习一个策略，要在前提条件：该策略，转移函数以及初始状态分布下，maximize所有时间步的折扣奖励之和。
+<script type="math/tex; mode=display">
+J(\pi_{\theta}) = \mathbb{E}_{\pi{\theta}, T, \rho_0} \left[ \sum_{t=0}^{\infty} \gamma^t r(s_t, a_t) \right]
+</script>
+</p>
+<h3 id="预训练">预训练<a class="headerlink" href="#预训练" title="Permanent link">&para;</a></h3>
+<p>预训练的目标是，学到能够迁移的知识，来促进做下游任务。到RL的预训练这块，可迁移的知识意味着</p>
+<ul>
+<li>一些好的<strong>representation</strong>，比如好的state space，能够让agent更准确，深度地感知这个世界。</li>
+<li>一些好的<strong>reusable skills</strong>，比如好的action space，让agent根据给定任务，快速搭建复杂的行为。</li>
+</ul>
+<p>这篇文章专注于<strong>无监督预训练</strong>，在这种模式下，<em>预训练阶段没有针对具体任务的奖励信号</em>，但智能体仍然可以通过online实时互动、
+无标签的历史数据、或其他不同类型（模态）的非任务相关数据来进行学习。我们<em>忽略了有监督预训练</em>，
+因为如果预训练时就提供了针对具体任务的奖励，那么就不算pretraining了，基本上就退化成了现有的标准强化学习问题了。</p>
+<h2 id="online预训练">Online预训练<a class="headerlink" href="#online预训练" title="Permanent link">&para;</a></h2>
+<p>传统的RL，依赖于设计好的，很dense的reward信号来学习specific task。但是，这导致它极容易过拟合，从而导致泛化能力很差。
+设计reward也是很耗费精力，并且经验主义的。</p>
+<p>于是出现了<strong>Unsupervised RL</strong>。在Pretraining阶段，agent单纯和环境互动，没有奖励信号，也没有人类监督。但是Pretraning时
+不能纯瞎逛，得设计一些机制让agent有内驱力去探索环境——由此引出内在奖励(intrinsic rewards)。内在奖励，和task-specific的外部奖励相反，能够让agent更泛化，发展潜在技能，更快适应下游任务。</p>
+<p>根据不同的内在奖励机制，无监督RL分为三类：</p>
+<h3 id="好奇心驱动的探索"><strong>好奇心驱动的探索</strong><a class="headerlink" href="#好奇心驱动的探索" title="Permanent link">&para;</a></h3>
+<p>探索最可能带来新知识的<strong>有趣</strong>状态，如果agent没能成功预测环境，就能学到更多知识，减少下次预测的不确定性。到奖励设计，早期是与预测error和uncertainty有关，但是会受noisy TVs问题的影响，后续大伙重点开发dynamics-free
+的reward估计；另一种设计思路是找一个好的feature encoder(φ)，能够筛选出信息量较大的特征，滤除无用特征。</p>
+<p>论文证实即使是完全随机的神经网络做feature encoder，效果就已经很好了(???), 但是<strong>逆动力学</strong>的feature encoder会有更好的表现。
+逆动力学指的是，编码器接收两个连续的画面（比如 t 时刻和 t+1 时刻的屏幕截图），并编码成两个特征向量。
+然后，一个“逆向动态模型”需要根据这两个特征向量，反推出智能体在 t 时刻采取了什么动作 a, 这样encoder被迫忽视无关的特征。
+<img alt="图片.png" src="../reading1.assets/1.png" width="80%" /></p>
+<p>缺点是：<strong>难以区分认知导致的，和运气导致的预测错误</strong>。进一步来讲，在一个noisy TV雪花屏这样高随机性的环境里，agent会被困住，
+试图学但是学不到任何东西。此外，agent只有遇到预测错误后才会回溯性的获得奖励，<strong>不会主动寻找不确定性</strong>。</p>
+<h3 id="技能发掘"><strong>技能发掘</strong><a class="headerlink" href="#技能发掘" title="Permanent link">&para;</a></h3>
+<p>一个不用model的方法，直觉是学习的每个技能应该能够控制agent访问哪个state，如下面的公式,
+最大化状态s和技能z的互信息，也就是知道s(或z)就很大概率能确定z(或s)。比如扫地是一个skill，我知道当前的state是拿扫帚,
+那就能推断出采取的skill是扫地，反之亦然。
+<script type="math/tex; mode=display">
+I(s; z) = H(z) - H(z | s) = H(s) - H(s | z)
+</script>
+定义<span class="arithmatex">\(z\)</span>为技能潜在变量，对于一个技能发掘agent，两点最重要：有技能概率分布<span class="arithmatex">\(p(z)\)</span>, 和采取了某个技能后的策略<span class="arithmatex">\({\pi}(a|s,z)\)</span>。每个episode(一整局)先根据<span class="arithmatex">\(p(z)\)</span>随机出来一个技能用，然后用这个技能跑完一整个episode。它和goal-conditioned policy learning等价，都是在某个非task-specified目标的情况下，执行conditioned policy。</p>
+<p>而实际中，很难估计<span class="arithmatex">\(H(z|s)\)</span>，所以可以训练一个小神经网络p来拟合。
+<img alt="图片.png" src="../reading1.assets/2.png" width="80%" /></p>
+<p>缺点：<strong>最大化互信息，并不能导向state coverage!</strong>可能每个skill就会走一条不同的，无意义的路，但是这种情况互信息也很高。有人把state平铺到二维，强制skill多覆盖state；也有人先最大化<span class="arithmatex">\(H(s)\)</span>，保证sate coverage，再去学习动作。此外，大家都感觉skill discovery效果不好，可能是难学习到同时具有<strong>泛化性</strong>(到下游任务)和<strong>特异性</strong>(导向特定行为)的skill。</p>
+<h3 id="最大数据覆盖"><strong>最大数据覆盖</strong><a class="headerlink" href="#最大数据覆盖" title="Permanent link">&para;</a></h3>
+<p>上一节末尾，我们谈到了state coverage的重要性，于是有人基于“要访问尽量多的sate”开发了data coverage maximazation方法。
+而如何最大化数据覆盖，又有多种方式。</p>
+<ul>
+<li>计数法：计算一个<span class="arithmatex">\((s,a)\)</span>对出现的次数，出现的越少，奖励就越高。鼓励探索没到过的地方。</li>
+<li>熵最大化法：最大化<span class="arithmatex">\({\pi}_{\theta}(a|s)\)</span>的状态分布的熵，也就是访问越多状态越好的意思。</li>
+</ul>
+<p>缺点：可能有的区域很好，但是要被限制要去访问未访问的区域，所以会“脱轨”，回不到正轨。马尔可夫链不能很好的实现最大状态熵策略，得加入历史信息。</p>
+<h2 id="offline预训练">Offline预训练<a class="headerlink" href="#offline预训练" title="Permanent link">&para;</a></h2>
+<p>在线预训练是limited的，因为无法高效的scale up，利用较大的数据集。为了解决这个问题，有人把数据收集和pretraining解耦，分开来做，也就是offline RL。</p>
+<p>但是offline有一个<strong>distribution shift</strong>的局限：策略想要从固定数据集里学习更好的动作-&gt;迫使value func对没见过的(s,a)对进行估值-&gt;价值函数估计过高-&gt;策略被误导，学习了一个罕见且差的动作。并且由此可以推断，offline学习到的策略泛化性可能不太好。</p>
+<p>于是有人又进一步，提出了offline-to-online RL，先offline做预训练，再online finetune。好处是offline预训练可以加速onlilne的微调不过。 但无论是纯offline预训练，还是加上online微调，<strong>都需要offline数据集有标注好的reward</strong>，但很多情况下这是不可能的。所以有人就又转向，不学policy，而是学能加快收敛或者提高表现的<strong>好的representation或先验知识</strong></p>
+<h3 id="技能提炼">技能提炼<a class="headerlink" href="#技能提炼" title="Permanent link">&para;</a></h3>
+<p>通过模仿学习，直接学习策略。但是要求模仿的一套完整的方案，所以面对多套数据时，表现不好。并且缺点也多，一是很难从一堆局部最优的数据集中学到全局最优的skill，另一个是下游任务收敛的也很慢。</p>
+<h3 id="表征学习">表征学习<a class="headerlink" href="#表征学习" title="Permanent link">&para;</a></h3>
+<p>表征学习试图通过offline数据学习一个好的state representation，下图是一些成熟的表征学习目标，其中充分性指的是表征包含足够的state信息，紧凑性代表表征是否滤除了无关信息。</p>
+<p><img alt="图片.png" src="../reading1.assets/3.png" width="80%" /></p>
+<p>一个好的表征，可以用来预测接下来的state，reward以及actions。早期，人们倾向于把类似的state（reward和next action distribution类似）压缩成一个表征。但当奖励很稀疏甚至没有时，所有状态看起来都很像，导致representation collapse，所有状态被压缩成一个表征。</p>
+<p>为了解决表征坍塌，我们引出<strong>Reconstruction-based</strong>方法，使用一个auto-encoder把原始图像压缩成一个低维表征，再试图用它重建原始图像;像素预测与之类似，只不过用t时刻的图片压缩的表征，预测t+1时刻的画面。这种方法得到的表征的充分性很好，因为必须包含图片主要信息才能重建(预测）出来，但是无法分辨无用信息。</p>
+<p>除了预测未来，还可以推导过去。<strong>Inverse dynamics</strong>方法通过预测两个连续state之间的action，来学习表征。得到的表征紧凑型很强，但是很容易<strong>过简化</strong>，把能够产生影响的信息忽视掉。</p>
+<p>此外还可以将CV和NLP中的自监督学习技术，特别是对比学习，应用到强化学习（RL）中来学习状态表征。</p>
+<p>总的来说，offline的表征学习有两个缺点：一是没有reward，容易关注无关紧要的特征；二是很难在不进行最终任务训练的情况下，提前判断一个预训练好的表征到底好不好。</p>
 
 
 
@@ -1459,20 +1838,20 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.path", "navigation.top", "navigation.tabs", "content.code.annotate", "content.code.copy", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.path", "navigation.top", "navigation.tabs", "content.code.annotate", "content.code.copy", "navigation.tracking"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
   
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       
-        <script src="../../_js/extra.js"></script>
+        <script src="../../../_js/extra.js"></script>
       
     
 
   <!-- Extra JavaScript (can't be set in mkdocs.yml due to content hash) -->
-  <script src="../../assets/javascripts/custom.ts"></script>
+  <script src="../../../assets/javascripts/custom.ts"></script>
 
   </body>
 </html>

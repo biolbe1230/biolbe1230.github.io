@@ -9,7 +9,10 @@ body,
 input {
     font-family: 'LXGW WenKai Screen', 'Lexend', 'Noto Sans SC', 'Source Code Pro', -apple-system, Helvetica, Arial, sans-serif;
 }
-
+@font-face {
+  font-family: "mao";
+  src: "毛泽东字体.ttf";
+}
 :root,
 [data-md-color-scheme=default] {    /* 主色调 - 使用橙红色作为主色 */
     --md-default-fg-color: rgba(52, 57, 72, 0.78);
