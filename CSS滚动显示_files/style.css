@@ -79,10 +79,10 @@ figure {
   height: 100vh;
 }
 .hero:nth-child(1) figure {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/photo-1506260408121-e353d10b87c7.jpg");
+  background-image: url("1.jpg");
 }
 .hero:nth-child(2) figure {
-  background-image: url("1.jpg");
+  background-image: url("4.jpg");
 }
 .hero:nth-child(3) figure {
   background-image: url("2.jpg");

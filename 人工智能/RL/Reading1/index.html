@@ -1148,6 +1148,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#后续问题与注意点" class="md-nav__link">
+    <span class="md-ellipsis">
+      后续问题与注意点
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1664,6 +1673,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#后续问题与注意点" class="md-nav__link">
+    <span class="md-ellipsis">
+      后续问题与注意点
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1783,6 +1801,16 @@ I(s; z) = H(z) - H(z | s) = H(s) - H(s | z)
 <p>除了预测未来，还可以推导过去。<strong>Inverse dynamics</strong>方法通过预测两个连续state之间的action，来学习表征。得到的表征紧凑型很强，但是很容易<strong>过简化</strong>，把能够产生影响的信息忽视掉。</p>
 <p>此外还可以将CV和NLP中的自监督学习技术，特别是对比学习，应用到强化学习（RL）中来学习状态表征。</p>
 <p>总的来说，offline的表征学习有两个缺点：一是没有reward，容易关注无关紧要的特征；二是很难在不进行最终任务训练的情况下，提前判断一个预训练好的表征到底好不好。</p>
+<h2 id="后续问题与注意点">后续问题与注意点<a class="headerlink" href="#后续问题与注意点" title="Permanent link">&para;</a></h2>
+<ul>
+<li>如何在学习下游任务时防止灾难性遗忘？可以通过类似知识蒸馏的正则化，将其与强化学习的目标结合，如果微调的新策略和预训练的teacher策略差距过大，损失函数会随之增大。</li>
+<li>如何保证在下游任务微调时，能够改动较少参数量，达到较好效果？最近工作有加了个adapter还不错；也有在输入前面加soft prompt的可训练token;</li>
+<li>引入监督学习来在不同环境的任务之间快速适应。</li>
+<li>如何持续更新预训练的大型模型，比如加功能，改架构。目前还没有较为完整的框架。</li>
+<li>缺少benchmark：只有一个URLB作为针对deepmind control suite的online pretraining的benchmark。针对offline预训练和泛化预训练的都没有。</li>
+<li>架构还可以创新，比如MoE？</li>
+<li>多智体强化学习无监督预训练怎么做？不知道。</li>
+</ul>
 
 
 
